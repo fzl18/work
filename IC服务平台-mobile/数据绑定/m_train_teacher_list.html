@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="IC服务平台">
+	<meta name="description" content="IC服务平台">
+	<link rel="stylesheet" href="css/sm.css">
+	<link rel="stylesheet" href="css/sm-extend.css">
+	<link rel="stylesheet" href="css/mobile-index.css">
+	<script src="js/zepto.js"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+	<div class="page" id="mproduct">
+	<header class="bar bar-nav">
+		<a class="icon icon-left pull-left back"></a>		
+		<a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" ></a>
+		<h1 class="title">{{title}}</h1>
+	</header>
+
+	<!-- 菜单栏 -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+	  <div class="content-block">
+	  	<a href="m_login.html">
+	  		<div class="user-login">
+	  		<img src="images/pic2.jpg" alt="">
+	  		<!-- 如果未登录显示图标
+	  		<span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> 
+	  		-->
+	  		</div>
+	  		<div>请登录/用户名</div>
+	  	</a>
+	    <ul class="content-padded">
+	    	<li><a class="close-panel" href="m_product_list.html">在线交易</a></li>
+	    	<li><a class="close-panel" href="m_finance_index.html">金融服务</a></li>
+	    	<li><a class="close-panel" href="m_job_index.html">人才服务</a></li>
+	    	<li><a class="active close-panel" href="m_train_index.html">培训服务</a></li>
+	    	<li><a class="close-panel" href="m_package_index.html">设计众包</a></li>
+	    </ul>
+	    <div class="icon icon-home"><a class="close-panel" href="/">返回首页</a></div>  
+	  </div>
+	</div>
+
+	<div id="mtrain" class="content pull-to-refresh-content notopbar" data-ptr-distance="10%">
+		<!-- 下拉刷新层 -->
+    <div class="pull-to-refresh-layer">
+        <div class="preloader"></div>
+        <div class="pull-to-refresh-arrow"></div>
+    </div>
+			<!-- 列表 -->			
+			<div class="product-list teacher-list">
+				
+				<div class="tit"><span class="icon icon-star"></span>特别推荐</div>				
+				<div class="content-padded hot">
+					<ul class="row">
+						<li v-for="lt in hotlist" class="col-20"><a href="m_train_teacher_detail.html"><img :src="lt.pic" alt=""><p>{{lt.name}}</p></a></li>
+					</ul>
+				</div>
+
+				<div class="tabs">			      
+			      <div class="tab infinite-scroll active" id="teacher">
+			          <div class="list-block project">
+			          	<div class="tit">
+							<span class="icon icon-app"></span>名师列表
+						</div>
+						<div class="content-padded">
+				            <ul class="list-container">
+				            	
+					              <li v-for="list in teacherlist">
+					              <a href="m_train_teacher_detail.html">
+					              	<img :src="list.pic" alt="">
+					              	<div class="pull-left media-body">
+					              		<div class="name">{{list.name}}</div>
+					              		<div class="tag"><span class="green">{{list.tag1}}</span><span class="orange">{{list.tag2}}</span></div>
+					              		<div class="info row no-gutter">
+					              			<div class="col-15">职务：</div>
+					              			<div class="col-85">{{list.post}}</div>
+					              		</div>
+					              	</div>
+					              	</a>
+					              </li>
+				            </ul>
+			            </div>
+			          </div>
+			          <!-- 加载提示符 -->
+			          <div class="infinite-scroll-preloader">
+			            <div class="preloader">
+			            </div>
+			          </div>
+			      </div>
+			    </div>				
+			</div>
+		
+
+			<div class="gotop"></div>
+			<footer class="foot">
+				<p>Copyright©2016|无锡德思普科技有限公司.All Rights Reserved.苏ICP备110718</p>
+			</footer>
+			<script>
+				var data={
+					"title":"名师荟萃",
+					"hotlist":[
+						{"name":"郁苏阳","pic":"images/pic13.jpg"},
+						{"name":"郁苏阳","pic":"images/pic13.jpg"},
+						{"name":"郁苏阳","pic":"images/pic13.jpg"},
+						{"name":"郁苏阳","pic":"images/pic13.jpg"},
+						{"name":"郁苏阳","pic":"images/pic13.jpg"},
+					],
+					"teacherlist":[
+						{"name":"郁苏阳","tag1":"设计验证经理","tag2":"金牌讲师","post":"上海芯片设计服务公司 芯片设计验证主管 诺丁汉大学芯片设计学院 芯片设计验证资深讲师","pic":"images/pic10.jpg"},
+						{"name":"郁苏阳","tag1":"设计验证经理","tag2":"金牌讲师","post":"上海芯片设计服务公司 芯片设计验证主管 诺丁汉大学芯片设计学院 芯片设计验证资深讲师","pic":"images/pic10.jpg"},
+						{"name":"郁苏阳","tag1":"设计验证经理","tag2":"金牌讲师","post":"上海芯片设计服务公司 芯片设计验证主管 诺丁汉大学芯片设计学院 芯片设计验证资深讲师","pic":"images/pic10.jpg"},
+						{"name":"郁苏阳","tag1":"设计验证经理","tag2":"金牌讲师","post":"上海芯片设计服务公司 芯片设计验证主管 诺丁汉大学芯片设计学院 芯片设计验证资深讲师","pic":"images/pic10.jpg"},
+						{"name":"郁苏阳","tag1":"设计验证经理","tag2":"金牌讲师","post":"上海芯片设计服务公司 芯片设计验证主管 诺丁汉大学芯片设计学院 芯片设计验证资深讲师","pic":"images/pic10.jpg"},
+					]
+				}
+			</script>
+	</div>
+	</div>
+	</div>
+	<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js"></script>
+</body>
+</html>

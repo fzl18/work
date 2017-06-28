@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>设置向导</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" href="css/setting.css">
+</head>
+<body>
+	<div class="head">
+		<div class="layui-main">
+			<div class="tit f20"><span>■</span>和路由设置引导</div>
+		</div>
+	</div>
+	<div class="layui-main">
+		<div class="config">
+			<div class="tab">				
+				<form class="layui-form" action="#" id="netset">
+				  <div class="tit">互联网设置 (静态IP)</div>				  
+				  <div id="account">
+					  <div class="layui-form-item">
+					      <input type="text" name="title1" placeholder="请输入IP地址" autocomplete="off" class="layui-input">	
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入子网掩码" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入默认网关" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入首选DNS" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入备用DNS" autocomplete="off" class="layui-input">
+					  </div>
+				  </div>
+
+
+				  <div class="tit" style="margin-top:86px;">
+					无线设置
+				  </div>
+				  <div class="layui-form-item">
+				      <input type="radio" name="wlan" value="20" title="无线开启" checked>
+				      <input type="radio" name="wlan" value="21" title="无线关闭" lay-filter="wlan">
+				  </div>
+				  <div id="wlan">
+					  <div class="layui-form-item">
+					      <input type="text" name="title3" placeholder="设置无线名称" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title4" placeholder="设置无线密码" autocomplete="off" class="layui-input">
+					  </div>
+				  </div>
+				  <div class="layui-form-item" style="margin-top:30px">
+				      <button class="layui-btn layui-btn-big layui-btn-normal  layui-btn-disabled f16" lay-submit disabled="disabled">设置未完成，无法生效</button>
+				  </div>
+				  <p><a class="f12" href="宽带新装宽带账号.html" style="color:#898B8B">互联网设置(普通用户) ></a></p>
+				</form>
+			</div>
+
+
+			
+			
+		</div>
+	</div>
+<script src="lib/layui/lay/dest/layui.all.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

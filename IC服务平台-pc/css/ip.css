@@ -1,0 +1,48 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+#ip .red{color:red}
+#ip .green{color:#69C55D}
+#ip .banner{width: 100%;min-width: 1030px;height: 300px;background: url('../images/banner/banner-ip.jpg') center center no-repeat;}
+.page_container {verflow: hidden;}
+#ip .ip_left{width:72%}
+#ip .ip_right{width:23%}
+#ip .ip_left, #ip .ip_right{margin-top:50px;}
+#ip .ip_theme{height:50px;}
+#ip .ip_theme span{color:#189DFF;padding-bottom:10px;border-bottom: 2px solid #189DFF;font-size:16px;}
+#ip .list th{background:#f7f7f7;line-height:34px;height:34px;}
+#ip .list tr{border:1px solid #D5D6DC;margin-bottom:20px;}
+#ip .list tr.null{border:0;height:20px;}
+#ip .list td{padding:15px 10px;line-height:24px;}
+#ip .list td.txt{color:#656565;border:1px dashed #E5E5E5;border:0 1px;padding:20px 30px;}
+#ip .list td.fc{color:#189DFF;text-align: center}
+#ip .list .buy a{color:#fff;text-align: center;display:inline-block;width:80px;height:26px;line-height:26px;background:#ED674F;}
+#ip .list .buy{border-left:1px solid #E8E8E8;text-align:center}
+
+
+#ip .inbox{margin-bottom:30px;line-height:20px;border-bottom:1px solid #E8E8E8}
+#ip .ip_title{color:#fff;background:#189DFF;height:30;line-height:30px;padding:0 10px;}
+#ip .ip_title a:hover{color:#ED674F}
+.ip_right li{padding:20px 10px ;border:1px solid #E8E8E8;border-top:0;border-bottom-style:dashed}
+.ip_right li:last-child{border-bottom:0}
+.ip_right .ip_info .ip_tit{margin-bottom:10px;}
+.ip_right .ip_info .ip_intro{color:#999;}
+
+
+
+
+
+
+
+.plaza_page_num {text-align: center;padding: 70px;clear:both;}
+
+.plaza_page_num a {display: inline-block;width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #d6d7dc;
+    color: #185a9d;
+    font-size: 13px;
+    margin: 2px;background-color: #efeff4;    border-radius: 3px;
+}
+
+.plaza_page_num a.page_this {color: #fff;background: #185a9d;
+}

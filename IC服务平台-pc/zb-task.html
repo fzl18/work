@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta name="keywords" content="IC服务平台">
+    <meta name="description" content="IC服务平台">
+    <title>IC服务平台-众包任务</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/package.css">
+    <!--[if lte IE 9]> 
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<body id="zbIndex">
+    <div class="head fix">
+        <div class="page_container">
+            <div aos="zoom-out-right" class="logo fl jzimg">
+                <a href="#"><img src="images/index/logo.png" alt=""></a>
+            </div>
+            <div aos="fade-left" aos-delay="200" class="login fr"><a href="#">登陆</a> | <a href="#">注册</a></div>
+            <div aos="fade-down" aos-offset="200" aos-delay="400" class="nav fr">
+                <ul>
+                    <li><a href="zb-index.html" class="">设计众包<span class="ico-down"></span></a></li>
+                    <li><a href="zb-hall.html" class="">任务大厅</a></li>
+                    <li><a href="zb-task.html" class="cur">众包任务</a></li>
+                    <li><a href="#" class="">成功案例</a></li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="subnav">
+            <div class="page_container">                            
+                <dl><a href="#" target="_blank"></a>
+                    <dt><img src="images/index/main_icon_btn1.png" width="38" height="36" alt=""></dt>
+                    <dd><h5>在线交易</h5></dd>
+                </dl>
+                <dl><a href="#" target="_blank"></a>
+                    <dt><img src="images/index/main_icon_btn2.png" width="31" height="35" alt=""></dt>
+                    <dd><h5>金融服务</h5></dd>
+                </dl>
+                <dl><a href="#" target="_blank"></a>
+                    <dt><img src="images/index/main_icon_btn3.png" width="35" height="36" alt=""></dt>
+                    <dd><h5>人力服务</h5></dd>
+                </dl>
+                <dl><a href="#" target="_blank"></a>
+                    <dt><img src="images/index/main_icon_btn4.png" width="38" height="36" alt=""></dt>
+                    <dd><h5>培训服务</h5></dd>
+                </dl>   
+                <dl><a href="#" target="_blank"></a>
+                    <dt><img src="images/index/main_icon_btn5.png" width="38" height="35" alt=""></dt>
+                    <dd><h5>设计众包</h5></dd>
+                </dl>
+            </div>                          
+        </div>
+    </div>
+    <div class="page_container" style="margin-top: 110px;">
+        <div class="task_cond">
+            <dl class="dl_danxuan">
+                <dt>查找需求：</dt>
+                <dd class="cond_sou">
+                    <input type="text" placeholder="例如IP核">
+                    <a href="#"><img src="images/package/task_sou.png"></a>
+                </dd>
+            </dl>
+            <dl class="dl_danxuan">
+                <dt>需求分类：</dt>
+                <dd class="option">
+                    <b class="this">不限</b>
+                </dd>
+                <dd class="option">
+                    <b>计算机科学</b>
+                </dd>
+                <dd class="option">
+                    <b>机电工程</b>
+                </dd>
+                <dd class="option">
+                    <b>生物医学</b>
+                </dd>
+                <dd class="option">
+                    <b>材料科学</b>
+                </dd>
+                <dd class="option">
+                    <b>信息技术</b>
+                </dd>
+                <dd class="option">
+                    <b>其他</b>
+                </dd>
+            </dl>
+            <dl class="dl_danxuan">
+                <dt>任务金额：</dt>
+                <dd class="option">
+                    <b class="this">不限</b>
+                </dd>
+                <dd class="option">
+                    <b>1000以下</b>
+                </dd>
+                <dd class="option">
+                    <b>1千~1万</b>
+                </dd>
+                <dd class="option">
+                    <b>1万~2万</b>
+                </dd>
+                <dd class="option">
+                    <b>2万~5万</b>
+                </dd>
+                <dd class="option">
+                    <b>5万~10万</b>
+                </dd>
+                <dd class="option">
+                    <b>10万以上</b>
+                </dd>
+                <dd class="option">
+                    <b>待议</b>
+                </dd>
+            </dl>
+            <dl class="dl_danxuan">
+                <dt>项目状态：</dt>
+                <dd class="option">
+                    <b class="this">不限</b>
+                </dd>
+                <dd class="option">
+                    <b>进行中</b>
+                </dd>
+                <dd class="option">
+                    <b>已结束</b>
+                </dd>
+            </dl>
+        </div>
+        <div class="task_list">
+            <ul>
+                <li>
+                    <div class="task_pic">
+                        <a href="zb-detail.html"><img src="images/package/task_pic1.png"></a>
+                    </div>
+                    <div class="task_info">
+                        <div class="task_tit">
+                            <a href="zb-detail.html">智慧门人机对话系统研发</a>
+                        </div>
+                        <br>
+                        <div class="task_money">
+                            <span>任务金额： <em>¥100000.00</em></span>
+                            <span>发布时间： 2016-08-10</span>
+                        </div>
+                        <div class="task_intro">
+                            系统实现动态语音识别,并开发人机对话功能。
+                        </div>
+                    </div>
+                    <div class="task_zt">
+                        进行中
+                    </div>
+                </li>
+                <li>
+                    <div class="task_pic">
+                        <a href="zb-detail.html"><img src="images/package/task_pic2.png"></a>
+                    </div>
+                    <div class="task_info">
+                        <div class="task_tit">
+                            <a href="zb-detail.html">光学检测信号放大器开发</a>
+                        </div>
+                        <br>
+                        <div class="task_money">
+                            <span>任务金额： <em>¥160000.00</em></span>
+                            <span>发布时间： 2016-08-10</span>
+                        </div>
+                        <div class="task_intro">
+                            我公司需要开发设计光学检测信号放大器,在设计的生化分析仪中,需运用光学试剂检测的手段 ,获得样本的光学信号来判断样本的病毒含量。由于样本信号极其微弱,需对其产生信号进行滤 波放大处理。本项目要求设计开...
+                        </div>
+                    </div>
+                    <div class="task_zt">
+                        进行中
+                    </div>
+                </li>
+                <li>
+                    <div class="task_pic">
+                        <a href="zb-detail.html"><img src="images/package/task_pic3.png"></a>
+                    </div>
+                    <div class="task_info">
+                        <div class="task_tit">
+                            <a href="zb-detail.html">水面垃圾(油污)自动化清扫船</a>
+                        </div>
+                        <br>
+                        <div class="task_money">
+                            <span>任务金额： <em>¥60000.00</em></span>
+                            <span>发布时间： 2016-08-10</span>
+                        </div>
+                        <div class="task_intro">
+                            需要开发水面垃圾(油污)自动化清扫船,用于快速高效地清除水面垃圾和油污,实现水面保洁的自动化。
+                        </div>
+                    </div>
+                    <div class="task_zt">
+                        进行中
+                    </div>
+                </li>
+                <li>
+                    <div class="task_pic">
+                        <a href="zb-detail.html"><img src="images/package/task_pic4.png"></a>
+                    </div>
+                    <div class="task_info">
+                        <div class="task_tit">
+                            <a href="zb-detail.html">便携式数据接收器</a>
+                        </div>
+                        <br>
+                        <div class="task_money">
+                            <span>任务金额： <em>¥20000.00</em></span>
+                            <span>发布时间： 2016-08-10</span>
+                        </div>
+                        <div class="task_intro">
+                            便携式数据接收器,能够在导游带团时使用,团里游客通过数据接收器的wifi连接并接收导游发过来的数据。
+                        </div>
+                    </div>
+                    <div class="task_zt">
+                        进行中
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="plaza_page_num">
+        <a href="#" class="page_this">1</a>
+        <a href="#" class="">2</a>
+        <a href="#" class="">3</a>
+        <a href="#" class="">></a>
+        <a href="#" class="">尾页</a>
+    </div>
+    <div class="gotop hand"></div>
+    <div class="foot">
+        <div class="page_container">
+            <a href="" target="_blank">华夏芯官网</a>|<a href="#" target="_blank">HSA官网</a>|<a href="#" target="_blank">无线电论坛 </a>|<a href="#" target="_blank">服务协议</a>
+            <p>Copyright© 2016 | 无锡德思普科技有限公司. All Rights Reserved. 苏ICP备11071881号</p>
+        </div>
+    </div>
+    <script src="lib/require-min.js" data-main='js/main'></script>
+    <script src="lib/aos.js"></script>
+    <script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 2000
+    });
+    </script>
+
+</body>
+
+</html>

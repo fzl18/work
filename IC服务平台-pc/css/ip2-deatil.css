@@ -1,0 +1,66 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+#ip .red{color:red}
+#ip .green{color:#69C55D}
+#ip .banner{width: 100%;min-width: 1030px;height: 250px;background: url('../images/banner/banner-ip-deatil.jpg') center center no-repeat;}
+/*.page_container {overflow: hidden;}*/
+#ip .tab-menubg{background:#515151;height:70px;}
+#ip .ip_right{width:73%;margin-top:50px;}
+#ip .ip_left{width:23%;margin-top:-170px;margin-bottom:50px;}
+#ip .ip_theme{height:50px;}
+#ip .ip_theme span{padding-left:10px;border-left: 3px solid #189DFF;font-size:16px;color:#666;font-weight:bold}
+#ip .list{width:100%;}
+#ip .list th{background:#f7f7f7;line-height:34px;height:34px;padding-left:20px;}
+#ip .list tr{border:1px solid #D5D6DC;margin-bottom:20px;}
+#ip .list tr.null{border:0;height:18px;}
+#ip .list td{padding:0px 10px;line-height:24px;}
+#ip .list td.txt{color:#656565;border:1px dashed #E5E5E5;border:0 1px;padding:20px 30px;}
+#ip .list td.fc{color:#189DFF;text-align: center}
+#ip .list .buy a{color:#fff;text-align: center;display:inline-block;width:80px;height:26px;line-height:26px;background:#ED674F;}
+#ip .list .buy{border-left:1px solid #E8E8E8;text-align:center}
+
+#ip .inbox{line-height:20px;border:1px solid #D2D2D2}
+#ip .ip_title{color:#fff;background:#189DFF;height:30;line-height:30px;padding:0 10px;}
+#ip .ip_title a:hover{color:#ED674F}
+#ip .tab-menu{margin-top:-120px;}
+#ip ul.layui-tab-title{display:inline-block; margin-bottom:50px;border-bottom:0;height:70px;position:relative;padding:0 60px;}
+#ip ul.layui-tab-title:before{content:'';top:50%;left:0;position:absolute;width:30px;height:2px;background:#C3C3C3 }
+#ip ul.layui-tab-title:after{content:'';top:50%;right:0;position:absolute;width:30px;height:2px;background:#C3C3C3 }
+#ip .layui-tab-title li{height:70px;line-height:70px;font-size: 16px;color:#C3C3C3;padding:0 30px;}
+#ip .layui-tab-title .layui-this{color:#F69030}
+#ip .layui-tab-title .layui-this:after{border:0}
+#ip .cname{background:#fff;text-align:center;padding:20px;color:#000;font-weight:bold;}
+#ip .cname img{margin:30px 0;width:100px;height:50px;}
+#ip .tag{background:#FF7C00;padding:20px;overflow:hidden}
+#ip .tag li{font-size:12px; float:left;margin:0 6px;background:#fff;border-radius:20px;padding:5px 8px;}
+#ip .info{padding:0 20px 50px 20px;}
+#ip .info .tit{color:#FF7C00;font-size:16px;padding-left:10px;border-left:3px solid #FF7C00;margin:20px 0 10px 0;}
+#ip .info ul{margin:15px;}
+#ip .info li{list-style:disc}
+#ip .info p{line-height:30px;}
+#ip .info p span{line-height:18px;font-size:12px;display:block}
+#ip .content{margin-bottom:100px;}
+#ip .content p{color:#656565;line-height:28px;}
+#ip .content img{margin:30px 0}
+#ip .list .link{border-left:1px solid #D5D6DC;width:25%}
+#ip .list .link a{width:140px;margin:20px auto; display:block;text-align:center;padding:5px 10px;border-radius:15px;background:#FA882B;color:#fff;}
+#ip .list .link a.s{background:#63B557}
+#ip .list .tool-info{color:#333;font-weight:bold;padding:15px;}
+#ip .list .tool-info p{color:#6F6F6F;font-weight:normal;margin:20px 0}
+#ip .list .tit{padding:0;}
+#ip .list .tit span{display:block; border-left:8px solid #2BA1FB;padding-left:15px;height:30px;line-height:30px;font-size:16px;color:#2BA1FB;}
+
+
+
+.plaza_page_num {text-align: center;padding: 70px;clear:both;}
+.plaza_page_num a {display: inline-block;width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #d6d7dc;
+    color: #185a9d;
+    font-size: 13px;
+    margin: 2px;background-color: #efeff4;    border-radius: 3px;
+}
+
+.plaza_page_num a.page_this {color: #fff;background: #185a9d;
+}

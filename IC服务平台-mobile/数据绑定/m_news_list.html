@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta name="keywords" content="IC服务平台">
+    <meta name="description" content="IC服务平台">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <link rel="stylesheet" href="css/mobile-index.css">
+    <script src="js/zepto.js"></script>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+
+<body>
+    <div class="page-group">
+    <div class="page" id="mproduct">
+    <header id="header" class="bar bar-nav">
+        <a class="icon icon-left pull-left back"></a>       
+        <a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" ></a>
+        <h1 class="title">{{title}}</h1>
+    </header>
+    <!-- 菜单栏 -->
+    <div class="panel-overlay"></div>
+    <div class="panel panel-right panel-cover theme-white" id='side-nav'>
+      <div class="content-block">
+        <a href="m_login.html">
+            <div class="user-login">
+            <img src="images/pic2.jpg" alt="">
+            <!-- 如果未登录显示图标
+            <span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> 
+            -->
+            </div>
+            <div>请登录/用户名</div>
+        </a>
+        <ul class="content-padded">
+            <li><a class="close-panel" href="m_product_list.html">在线交易</a></li>
+            <li><a class="close-panel" href="m_finance_index.html">金融服务</a></li>
+            <li><a class="close-panel" href="m_job_index.html">人才服务</a></li>
+            <li><a class="close-panel" href="m_train_index.html">培训服务</a></li>
+            <li><a class="close-panel" href="m_package_index.html">设计众包</a></li>
+        </ul>
+        <div class="icon icon-home"><a class="close-panel" href="/">返回首页</a></div>  
+      </div>
+    </div>
+    <!-- 菜单栏 结束-->
+    <!-- 新闻滚动栏 -->
+    <div class="content pull-to-refresh-content notopbar" data-ptr-distance="55">
+        <!-- 下拉刷新层 -->
+        <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+        </div>
+          <div class="swiper-container" data-space-between='10'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/pic3.jpg" alt=""><div class="tit">John Glossner博士成功当选HSA主席</div></div>
+              <div class="swiper-slide"><img src="images/pic3.jpg" alt=""><div class="tit">John Glossner博士成功当选HSA主席</div></div>
+              <div class="swiper-slide"><img src="images/pic3.jpg" alt=""><div class="tit">John Glossner博士成功当选HSA主席</div></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- 新闻列表 -->
+            <div id="news" class="product-list infinite-scroll active content-padded">
+                      <div class="list-block project">
+                        <ul class="list-container">
+                          <li v-for="list in newslist" >
+                          <a href="m_news_detail.html">
+                            <img :src="list.pic" alt="">
+                            <div class="pull-left media-body">
+                                <div class="tit">{{list.title}}</div>
+                                <div class="info">{{list.info}}</div>
+                            </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 加载提示符 -->
+                      <div class="infinite-scroll-preloader">
+                        <div class="preloader">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    <div class="gotop"></div>
+    <footer class="foot">
+        <p>Copyright©2016|无锡德思普科技有限公司.All Rights Reserved.苏ICP备110718</p>
+    </footer>
+    <script>
+      var data={
+        "title":"新闻中心",
+        "newslist":[
+          { "title":"平台注册开发者达到10000人",
+            "info":"昨天，南航在全国各地16个城市分公司同时开展了南航史上最大规模的一次众开放日活动。80余名广州市民和媒体记者走进全...",
+            "pic":"images/pic.jpg"
+          },
+          { "title":"IC投融资孵化服务平台内测",
+            "info":"看啥都震撼 小米Max定义大屏手机新标杆小米Max的设计初衷源自手机重度用户对于大屏的刚性需求，所以“看什么都震撼”的大屏手机应运...",
+            "pic":"images/pic2.jpg"
+          },
+          { "title":"平台组织召开开发者沙龙",
+            "info":"作为本次展会鸿合发布的重磅新品，全球首创的鸿合HiteVision超宽超短激光互动投影机以其130寸的超宽屏投影显示面积，21:9显示比例...",
+            "pic":"images/pic3.jpg"
+          },
+          { "title":"平台组织召开开发者沙龙",
+            "info":"作为本次展会鸿合发布的重磅新品，全球首创的鸿合HiteVision超宽超短激光互动投影机以其130寸的超宽屏投影显示面积，21:9显示比例...",
+            "pic":"images/pic3.jpg"
+          },        
+        ]
+      }
+    </script>
+    </div>
+    </div>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+    <script src="js/vue.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

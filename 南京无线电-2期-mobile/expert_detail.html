@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="keywords" content="专家咨询-南京无线电-手机版">
+	<meta name="description" content="专家咨询-南京无线电-手机版">
+	<link rel="stylesheet" href="mobile-style/css/sm.css">
+    <link rel="stylesheet" href="mobile-style/css/sm-extend.css">
+	<link rel="stylesheet" href="mobile-style/css/mobile-index.css">
+	<script src="mobile-style/js/zepto.js"></script>
+	<script src="mobile-style/js/flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page" id="expert">
+			<header class="bar bar-nav">
+				<h1 class="title">专家咨询</h1>
+				<a class="pull-left back"><img class="back" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAsCAYAAADFP/AjAAAEkElEQVRoBdWZXUybVRjH//0utHRdhbVb+XAwoCQzyIwy2QwzOhPZ4sLilSFeuMVkuzAxMdGpcXGJGThZoomKm4YLEm+Mu1g0UFAEhmx+bYkTwlhKacsYG2MwShn20zwveZva9215W/r1npvT9znnPM/zO6fn4zlHEgqFQkhhIm3WsTmcG3LiwrEnUqhZuCq58Krxa7IwZ/vsGJ1xo0CdMtXxDfOUpsTyLzfm8bHVhr+n3TwmMi/aEBTBtPdN4ppzKfOex7GYFNRl2wJae2z40/EgjursFSUERTDtfXZcnlzInscCLAuCuup8gNPdNozYchuG5Y0LRTDtvXYMTMyz9UWR80L9c8uNNqsN/ePJw3j9QZy/5BLUCSq5BGqFDAqZBAaNEkadEiWGPGiUMkHtoytJIjdfgjn7kx3W0bnoeln5Lt6sRm2xDs9UGrC/phCmTSpBfjBQE3c8aOuxoSdHYPg8l0iAhorNONZYhn1Vj4C+YyXJyYs3Ql8Pu5Daw1Isc6mR7yrdhDMvW2AxaXkVSh56A6GuK9P49OcpLKz4eCvlolAuk+CjQ9Vo2W3muBeeUx5vAJ2/utAx6BQV3JvPb8dbL5T/DywMxUoJ7pthF74YcMC96mfFCedyqQTP1RQKbrfiDcAfCDEdemfp34Q69nRzNV59ujhsiwPFliw99OP8sJNZlpOBo1P6+KlGVl3COU0FOlP2j9/Dj9fv4q7bG1OHQiZF9xtPombr2hyLCcVqILhzl5z4asgJ6k2haaNQkXZ8gSC+vzqL1m4b5pb54eq368Px27pQrPL7Hh86Bh3oHJkWBJdKqEgfXu+6HvPs+e3ROjRWGSBlG6yXGzQKvNu0A7+d2IPj+8qgkgtuup5qweXkQ9eRWjz1qJ63TefI2gkmYc9I8XtNO3DlnQYc3VuScbg8hQwdLTt5I2uK72j+JwzFdtEWnQofvlQVhqN9I1PJqFPheGMZxxytnkM37ycPxWpk4UbebmA2wkzBvVK/DVKesxJFFkmPFAvF5ma9Gm2HLWDg6s2gfSqdqVCrxK5SHcfE2MwyBK9+nNbrCG4troJA05lOXpwAnVsjU0VRfupGKlIx/U43ENkoNeRFm2U26ZT9/TjaMyDgu1vc0OqXAZ+TNiHqkaIrA74kaihajKKTUi5N30IRbSwd36O3lzlqi7RK8ULRX+93+yIHapteLV6o3rF7vEFstUkjTqhAMITP+qc4o0QCupQR5ULx+YCDeQOLpqKj4LOJxFPRCrL1feHaLM5YJ3nNU5xFB2zea2feFlkWrvqC+KR3El8OOmJ68tqeEqYs56EWV3zM/UTHkBMzPPsSS7jTXICmx4rWh6J7Cboyy1Ty+YOY93jhWljFxKyHedT7Y2oR/mD8t3YKc1qbLeH4Ku5InfrhJr7763ammJK288HBStRFxFaiXP0i6U+8WIEje9fmEiuPO1JspVzMtSoZWg9b0Fxn4rgnOijaiw7VGvH+gUpsjfFeJRoo2n+aHzeipd6M8qJ8zuhECnIOKl8pw5YCeiJVodKoQY1Ji93lelQbtXEf2iKh/gO/bZvXW2fYbQAAAABJRU5ErkJggg==" alt=""></a>		
+				<a class="pull-right open-panel " data-panel='#side-nav'><img class="main-nav" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAsCAYAAADfAxCtAAACL0lEQVRoBe2azUsbQRjGn53Ej0QlldRgCVhRqBEVsUhDb5ZeGsSD4sWvi9dCzyIWeioepP9AwYvQ9lIhJy9CDlJoC6bxUNBCEQ0Rc4g0avxYsztl4mF1IDnsGtgZZ27v7M7u83ufZdj33dX0okHfr/3Fpx8ZnF4akGU01nkwGQ1jPtYJDxmcfvdxYx+6QWXhK3Ewns29PAq6Ce3JQoLK5CDvFHOUnOkmPy9VzPjIi0hQKigehvGRxdEuRFob+WNSxIyL8WmUUmqYFMn9PHKFKyngGESwoQZP2wLwEO0aUhqyMiCkzLxU0wpSFjuVk8pJgTKgHleBzKooVTlZMT0CHfQ60VrQDRy59H33gc+LpvprPFuQV4aJt/E/+PzzAEXTnR0FomkY6Q9habwbtiA/rO9i5XvGyUNQ9bUmpYinsvDXemBr44n/ylZd5F3dYDV5aA9SN8RpmRiU2oMc7gvdVaKrfp1XPS32IOdinYj1tlRdoNMbPO9oxuJYxFlnIPPvAumjC1Dqsh1WAx4F6tEe9JXyVOrxOM2Y29fb2l3dDsXrU5B8RkSNlZOiOsfrVk7yGRE1Vk6K6hyv+144eatoZoXmVvoE2ZNLPhnCxezT3UBbAF6iWZ0B1quZWU4hlT4WDqicYPYRdmW236pC3nz5ja/Jw3LnCzv/svuhVU8mdnLCglQSntjOWZCs4SPj8NcSC3IqGpaRERPPwtbG83roMfSiieVvaeTPi8ID3/zt7D+WtqMSMpLj7wAAAABJRU5ErkJggg==" alt=""></a>
+				
+			</header>
+			<div class="content" style="background:#F5F5F5">
+				<div class="pic-info">
+					<img class="bg" src="mobile-style/images/e-1.jpg" alt="">
+					<div class="info">
+						<div class="ppic"><img src="mobile-style/images/expert.png" alt=""><span class="v-icon"></span></div>
+						<p class="name">李兴华</p>
+						<p class="fans">粉丝： 1127</p>
+						<a class="flow" href="javascript:;">+ 关注</a><a class="talk" href="javascript:;">在线交流</a>
+					</div>
+				</div>
+				<div class="expert-detail buttons-tab fixed-tab" data-offset="1.2">
+			      <a href="#tab1" class="tab-link active button"><span>个人资料</span></a>
+			      <a href="#tab2" class="tab-link button"><span>培训课程</span></a>
+			      <a href="#tab3" class="tab-link button"><span>留言互动</span></a>
+			    </div>
+				<!--list -->
+				<div class="tabs">
+			
+		      <div id="tab1" class="tab infinite-scroll active pinfo">
+		        <div class="list-container">
+		          <div class="content-padded">
+
+		          	<div class="row">
+		          		<div class="col-20">姓名</div>
+		          		<div class="col-80">李兴华</div>
+		          	</div>
+		          	<div class="row">
+		          		<div class="col-20">职位</div>
+		          		<div class="col-80">软件开发讲师，北京大学特邀讲师</div>
+		          	</div>
+		          	<div class="row">
+		          		<div class="col-20">技术领域</div>
+		          		<div class="col-80">JavaOracleandroid编程开发大数据集群开发</div>
+		          	</div>
+		          	<div class="row">
+		          		<div class="col-20">专家介绍</div>
+		          		<div class="col-80">毕业于北京信息科技大学-计算机科学与技术系，就职于北京大学计算机学院，魔乐科技MLDN，优拓教育YOOTK，主要讲授各种程序设计语言等课程。</div>
+		          	</div>
+
+		          </div>
+	          </div>
+
+		    </div>
+
+		    <div id="tab2" class="tab infinite-scroll class">
+		      <div class="list-container">
+		        <div class="hot">
+		          <a href="live_list.html"><div class="tit">热门课程推荐 <span class="pull-right">></span> </div></a>
+				  <dl><a href="live_detail.html">
+				  	<dt><img src="mobile-style/images/c-1.jpg" alt=""><span>最近报名   238人</span></dt>
+				  	<dd>【城市数据团 | 大鹏教你玩数据_第一期】上海夜晚去哪儿浪？</dd></a>
+				  	<dd class="other"><span class="price green">免费</span> <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"> 分享</a></div></dd>
+				  </dl>
+				</div>
+				<div class="hot all">
+		          <a href="live_list.html"><div class="tit">全部课程 <span class="pull-right">></span> </div></a>
+				  <dl><a href="live_detail.html">
+				  	<dt><img src="mobile-style/images/c-2.jpg" alt=""><span>最近报名   238人</span></dt>
+				  	<dd>【数据团成长营】数据达人培养计划</dd></a>
+				  	<dd class="other"><span class="price orange">¥  168.00</span> <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"> 分享</a></div></dd>
+				  </dl>
+				  <dl><a href="live_detail.html">
+				  	<dt><img src="mobile-style/images/c-1.jpg" alt=""><span>最近报名   238人</span></dt>
+				  	<dd>【地产数据研习社】地产人数据能力增强计划</dd></a>
+				  	<dd class="other"><span class="price orange">¥  168.00</span> <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"> 分享</a></div></dd>
+				  </dl>
+
+				</div>
+	          </div>
+		    </div>
+
+		    <div id="tab3" class="tab infinite-scroll talk">
+		        <div class="list-container">
+		          <div class="t-tit">留言（120） <span class="pull-right"> > </span></div>
+		          <div class="sub-tit">当前评论</div>
+					<div class="message">
+			          	<div class="row">
+			          		<div class="col-15"><img src="mobile-style/images/expert.jpg" alt=""></div>
+			          		<div class="col-85">
+			          			<p class="tit">平行世界隐形的Y<span class="pull-right"> <a href="javascript:;" class="red">69 顶+</a></span></p>
+			          			<time>2月15日</time>
+			          			<p class="con">第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</p>
+			          			<p class="reply"><span>李兴华：</span>谢谢你，希望你学有所成</p>
+			          		</div>
+			          	</div>
+			          	<div class="row">
+			          		<div class="col-15"><img src="mobile-style/images/expert.jpg" alt=""></div>
+			          		<div class="col-85">
+			          			<p class="tit">平行世界隐形的Y<span class="pull-right"> <a href="javascript:;">269 顶+</a></span></p>
+			          			<time>2月15日</time>
+			          			<p class="con">第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</p>
+			          		</div>
+			          	</div>
+			          	<div class="row">
+			          		<div class="col-15"><img src="mobile-style/images/expert.jpg" alt=""></div>
+			          		<div class="col-85">
+			          			<p class="tit">平行世界隐形的Y<span class="pull-right"> <a href="javascript:;">369 顶+</a></span></p>
+			          			<time>2月15日</time>
+			          			<p class="con">第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</p>
+			          		</div>
+			          	</div>
+			          	<div class="row">
+			          		<div class="col-15"><img src="mobile-style/images/expert.jpg" alt=""></div>
+			          		<div class="col-85">
+			          			<p class="tit">平行世界隐形的Y<span class="pull-right"> <a href="javascript:;" class="red">69 顶+</a></span></p>
+			          			<time>2月15日</time>
+			          			<p class="con">第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</p>
+			          			<p class="reply"><span>李兴华：</span>谢谢你，希望你学有所成</p>
+			          		</div>
+			          	</div>
+			          	<div class="row">
+			          		<div class="col-15"><img src="mobile-style/images/expert.jpg" alt=""></div>
+			          		<div class="col-85">
+			          			<p class="tit">平行世界隐形的Y<span class="pull-right"> <a href="javascript:;" class="red">69 顶+</a></span></p>
+			          			<time>2月15日</time>
+			          			<p class="con">第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</p>
+			          			<p class="reply"><span>李兴华：</span>谢谢你，希望你学有所成</p>
+			          		</div>
+			          	</div>
+						<div class="more"><a href="javascript:;">加载更多...</a></div>
+
+			          	<div class="talkbar">
+			          		<div>发表留言</div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAeCAYAAACrI9dtAAAFKklEQVRYCc1W61OUZRT/cV1Yll3uFxFi2YUlGxIFFkgqSy0dc0ZtMk1QtJpuU1/qH6iPfa8v1UwFiqbgJIYpNuIM92sBAcuy3AYBl2UXluvCsjTnWd7XfV9YYx0jz8zu+5znOec5vzm353gt2FZW8ZSR91OGh8Hx/b9AWa0zGBgcRmdnN6SBgTh27DAPZUtBzczMMiC6Hj06/+7hQdBiS0GZzVMwGAbQo+tj39XVhyns5+eH5eVl0NeV/hNPTU1No69vAF3dvQyIq8HgYBlUSYlIT0/D3Pw8rlz5FYGBAa4ieGKgxseN6O01oEenx/37YwIjcnkw1ColsrJ2ITY2Bl5ezuPWtna2CAlRCOQfG9T0tJV5o88wAKNxAiaTmb/Yx8cHGo0aKckqbNsWg+joSHZGoSoqvoz5+QV8+EEhJtd0IsLDeF1aeASKKqajsxs6nR5DQyOCi4KCpNjxrAYajQqJiQnr8kSn68PFklKmw3nKMjXN+NDQEMFd/wrKaDShV2+AXt+PwcFhgbJCIUdKigqpGjXU6iTBmStT39CCmzfvsC0Cf67wFFuPjz9gX7ki2FV8Y09NTJiYRwjI6Oi4QCEmJgqpqcksWePjt/P5IRByYW5XVqGmpoHtxMZGI//0W5DJgrC8bAcVBJFCLnfRcAmfyTSJ9o4uGAyDGBkZFQjFxcUiWZ0ElSoRCQnbBWePYu5WVfOAKMdOnTwOr7XYWa1WrKw4mLrCnae++74Ii4s23kZa2g5kZuxEVFQkpNJAfn8zi7m5eVRUVPIN8sD+l5GXlyNQpf5FJJH4Q6EQVh//9h06uB+RkeG84uSkGbOzcx4DGht7gG++/YEHdP7c6XWAyIjZbGG2wsJC4ePDw2B7XuIpoe3PDtTXN4P6DpGvrw+ytRnQajMQEiKMPRNw+aMKK7lUCmraFCXKH3cFcOv2XdTWNrL8pLC60rrq25WeBvrV1jWhrq4J1AZqahsZn52dgVf25iEgQOJ6B1s3Nrbit4pKtqZwnyl4G5TY7ohLcnHjJPl1oLhLXsjNgjZrN5qa29DQ0AyLZZp5sK2tHS/m5UKr3c3ygeRbWv/iAVF1FuSfYBXG3bXRl5ovEXV7MbkFRYIUutycTBa+5uY2dHXrMDAwjDt/3ENDYws+/ug8y7ny8t/ZvTuffw5Hjx6Gt/faOyK2tsY7HA4+p0JFTwyz60ZPsE1GyDP06+nRo+RSGWgMocaamBiPwrPvsGSNj48T6LljqDoXFhbZMSW6mB7pKbEw8dQ4OfL3d44cBMwTstmWeHF6FcQkrEXx6QY8NVmOuDmIxpQvv/oa1687w8idu/suLTlBUUGIxxbS8RgU15FJmfoa9bKi4l/gcKwiSCaF3W7HhYtXUX7jFjjjYnA2m7NJix9iTs7j8NntK0xXIpGwJ6ns2g3G79mTjX2vvoSJiUk2V9Em9a03jx+BUpnA2WPfqSln5YWJpgNOyGNP0UxERBX0c9Fl5qlDB/fhtQN72X54eCjeezcfSuUzrBh+/KkE9ITp9QbOJowTJraOiHj4gvCHjxM+zlMcOPJETk4mf6e3tzeoCgvPnsSRN15n+/TAF1+4itKycva+Lq0lusLNC+Fx+GQyKQ/gTMEJqFRKnhcvMjPTWcug8YVC2d7exaZVX1+n2ZANKo/uWPf2iS/eiO/vH2JNk7r3ZqmrSwcCZ7E4pwPS++zT9xEuGoVp/7FAbRaIWI4qtOpeNaqr60GF8sXnn4DmeTFtKSixcXe8x9Xn7qInuf8PACjv48lxoP8AAAAASUVORK5CYII=" alt="">
+			          	</div>
+					</div>
+	          </div>
+		    </div>
+			
+<!-- 				<footer class="foot">
+					<p>Copyright© 2016 | 南京芯元通信息技术有限公司. All Rights Reserved. 苏ICP备11071881号</p>
+				</footer> -->
+			</div>			
+		</div>
+
+
+		<!-- 菜单栏 开始-->
+		<div class="panel-overlay"></div>
+		<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+		  <div class="content-block">
+		  	<div class="close-panel menu">菜单 <span class="icon icon-right"></span></div>		  	
+		    <ul>
+		    	<li><a href="index.html">首页</a></li>
+		    	<li><a href="product.html">产品服务</a></li>
+		    	<li><a href="case.html">典型案例</a></li>
+		    	<li><a href="courses.html">网上课程</a></li>
+		    	<li><a href="resources.html">在线资源</a></li>
+		    	<li><a href="bbs.html">在线交流</a></li>
+		    	<li><a href="about.html">中心介绍</a></li>
+		    	<li><a class="active" href="news.html">新闻&问题</a></li>	
+		    </ul>
+		    <div class="user-login">
+		    	<div class="row" style="margin-bottom:.4rem">
+		    		<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+		    		<div class="col-40">血战钢锯岭の戴斯蒙德<br><a href="user.html">进入个人中心 >></a></div>
+		    		<div class="col-40"><a class="logout pull-right" href="javascript:;">注销</a></div>
+		    	</div>
+		    	<!-- 未登陆 -->
+		    	<!-- <div class="row">
+		    		<div class="col-100"><a class="button button-fill login" href="javascript:;">登录</a></div>	
+		    	</div> -->
+		    </div>  
+		  </div>
+		</div>
+		<!-- 菜单栏 结束--> 
+	</div>
+
+		<!-- 留言 -->
+          <div class="popup expert-popup">
+            <header id="header" class="bar bar-nav">
+              <a class="icon icon-left pull-left close-popup"></a>
+              <h1 class="title">发表留言</h1>
+            </header>
+            <div class="content content-padded from">
+              <textarea name="" id="" rows="6" placeholder="请合理表达感情，不要人身攻击。"></textarea>
+			<a class="close-popup cancel" href="#">取消</a>
+			<a class="OK" href="#">确认</a>
+            </div>
+          </div>
+
+	</div>
+	<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+	<script type='text/javascript' src='mobile-style/js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='mobile-style/js/sm-extend.js' charset='utf-8'></script>
+	<script src="mobile-style/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

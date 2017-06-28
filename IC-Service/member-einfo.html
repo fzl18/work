@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+	<meta http-equiv="Cache-Control" CONTENT="no-cache">
+	<meta http-equiv="Expires" CONTENT="0">
+	<meta name="keywords" content="IC服务平台">
+	<meta name="description" content="IC服务平台">
+	<title>IC服务平台-个人中心-企业资料</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/member.css">
+	<!--[if lte IE 9]> 
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body id="member">
+	<div class="head fix">
+		<div class="page_container">
+			<div aos="zoom-out-right" class="logo fl jzimg"><a href="#"><img src="images/index/logo.png" alt=""></a></div>
+			<div aos="fade-left" aos-delay="200" class="login fr"><a href="#">登陆</a> | <a href="#">注册</a></div>
+			<div aos="fade-down" aos-offset="200" aos-delay="400" class="nav fr">
+				<ul>
+					<li><a href="#" class="cur">用户中心<span class="ico-down"></span></a></li>
+					
+				</ul>
+				<hr>
+			</div>
+		</div>
+		<div class="subnav">
+			<div class="page_container">							
+				<dl><a href="#" target="_blank"></a>
+					<dt><img src="images/index/main_icon_btn1.png" width="38" height="36" alt=""></dt>
+					<dd><h5>在线交易</h5></dd>
+				</dl>
+				<dl><a href="#" target="_blank"></a>
+					<dt><img src="images/index/main_icon_btn2.png" width="31" height="35" alt=""></dt>
+					<dd><h5>金融服务</h5></dd>
+				</dl>
+				<dl><a href="#" target="_blank"></a>
+					<dt><img src="images/index/main_icon_btn3.png" width="35" height="36" alt=""></dt>
+					<dd><h5>人力服务</h5></dd>
+				</dl>
+				<dl><a href="#" target="_blank"></a>
+					<dt><img src="images/index/main_icon_btn4.png" width="38" height="36" alt=""></dt>
+					<dd><h5>培训服务</h5></dd>
+				</dl>	
+				<dl><a href="#" target="_blank"></a>
+					<dt><img src="images/index/main_icon_btn5.png" width="38" height="35" alt=""></dt>
+					<dd><h5>设计众包</h5></dd>
+				</dl>
+			</div>							
+		</div>
+	</div>
+
+<!-- start -->
+	<div class="container u-panel" style="margin-top: 90px;">
+    <div class="page_container">
+      <div class="breadcrumb-bar clearfix">
+        <h2>企业中心</h2>
+      </div>
+      <div class="content clearfix order-cont">
+        <div class="col-main">
+          <div class="main-wrap">
+            <div class="title-bar ">
+              <div class="masthead clearfix">
+                <h3>企业资料 <span class="fr f14" style="color:#EF6500">【请在初次登录平台30天内完善企业信息，否则将无法调用平台的免费资源。】</span></h3>
+              </div>
+              <div class="masthead clearfix" style="background:#F9F9F9">
+                <p><i class="f20" style="color:#269FFB">●</i> 完善企业信息有利于您更多资源的免费使用，完善/修改资料
+                <span class="fr"><a class="ui-btn2 ui-btn-m" href="#">取消</a><a class="ui-btn1 ui-btn-m" href="#" style="margin-left: 20px">确认</a></span>
+                </p>
+              </div>
+            </div>
+            <form action="#" method="post" enctype="multipart/form-data">
+            <div class="einfo f14">
+              <p><i>*</i>企业简称</p>
+              <p><input type="text" value="无锡德思普科技有限公司" /></p>
+              <p><i>*</i>图片 ( 限 jpg/png 1M以内 )</p>
+              <p class="uploader">
+                <input type="text" class="filename" readonly="readonly" style="min-width:130px;margin-bottom: 15px;">
+                <input type="button" name="file" class="btn" value="浏览">
+                <input type="file" accept="image/png,image/jpeg" size="30">
+              </p>
+              <p>企业介绍</p>
+              <p><input type="text" placeholder="请对您所在公司进行简单描述" style="width:550px;" /></p>
+              <p><i>*</i>企业类型</p>
+              <p>
+                <label> <input name="etype" type="radio" value="国企" />国企</label>
+                <label> <input name="etype" type="radio" value="合资企业" />合资企业</label>
+                <label> <input name="etype" type="radio" value="股份制企业" />股份制企业</label>
+                <label> <input name="etype" type="radio" value="上市公司" />上市公司</label>
+                <label> <input name="etype" type="radio" value="民营企业" />民营企业</label>
+                <label> <input name="etype" type="radio" value="外资企业" />外资企业</label>
+              </p>
+              <p><i>*</i>企业规模</p>
+              <p>
+                <label> <input name="esize" type="radio" value="1" />小型</label>
+                <label> <input name="esize" type="radio" value="2" />中型</label>
+                <label> <input name="esize" type="radio" value="3" />大型</label>
+              </p>
+              <p><i>*</i>业务范围</p>
+              <p><input type="text" placeholder="请尽可能描述全面"></p>
+              <p><i>*</i>联系人</p>
+              <p><input type="text"></p>
+              <p><i>*</i>手机号码</p>
+              <p><input type="text"></p>
+              <p></p>
+              <p><a class="ui-btn1 ui-btn-l" href="#">提交</a></p>
+            </div>
+            </form>
+          </div>
+        </div>
+
+
+
+        <!-- 侧边栏 -->
+        <div class="col-aside">
+          <div class="u-sidenav">
+            <div class="account-info">
+              <div id="uploadImgs" class="avatar">                 
+				<div id="up_img" class="j_avatar_edit edit">
+					<div id="" class="btn">修改照片</div>
+					<p class="p">照片大小800kb以内，支持PNG/JPG/GIF格式</p>
+				</div>
+              </div>
+              <div class="username">username</div>
+            </div>
+            <ul>
+              <li><a href="#"><i class="fa fa-user"></i>个人信息</a></li>
+		      <li><a href="#"><i class="fa fa-lock"></i>密码修改</a></li>
+		      <!-- <li><a href="#"><i class="fa fa-edit"></i>开发板申请</a></li>		       -->
+		      <li><a href="#"><i class="fa fa-map-marker"></i>管理收货地址</a></li>
+		      <!-- <li><a href="#"><i class="fa fa-bell-o"></i>消息</a></li> -->
+		      <li><a href="#"><i class="fa fa-bank"></i>企业资料</a></li>
+		      <li class="active"><a href="#"><i class="fa fa-inbox"></i>企业产品</a></li>
+          <li><a href="#"><i class="fa fa-recycle"></i>供求信息</a></li>
+          <li><a href="#"><i class="fa fa-archive"></i>所有订单</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<!--end-->
+
+
+	<div class="gotop hand"></div>
+	<div class="foot">
+		<div class="page_container">
+			<a href="" target="_blank">华夏芯官网</a>|<a href="#" target="_blank">HSA官网</a>|<a href="#" target="_blank">无线电论坛 </a>|<a href="#" target="_blank">服务协议</a>
+			<p>Copyright© 2016 | 无锡德思普科技有限公司. All Rights Reserved. 苏ICP备11071881号</p>
+		</div>
+	</div>
+
+<script src="lib/require-min.js" data-main='js/main'></script>
+<script src="lib/aos.js"></script>
+<script>
+	AOS.init({
+		easing: 'ease-out-back',
+		duration: 2000
+	});
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

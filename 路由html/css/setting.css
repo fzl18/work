@@ -1,0 +1,79 @@
+@charset "utf-8";
+body{background:#EBEFF2!important;}
+.layui-input:focus, .layui-textarea:focus{border-color:#188CEA!important}
+.layui-input{background:none;border-color:#acacac}
+body .setting-class .layui-layer-title{background:#1E9FFF; color:#fff; border: none;}
+.layui-btn-green{background:#17CF42!important;}
+.layui-layer-dialog .layui-layer-content{margin-bottom:30px; font-size:18px!important;padding:20px 50px!important;line-height:40px!important;}
+.layui-form-radio{margin-right:100px;}
+.layui-form-radio i:hover, .layui-form-radioed i{color:#188CEA}
+.layui-form-select dl dd.layui-this{background-color:#188CEA}
+.layui-form-label{text-align:center;width:inherit;color:#999}
+.layui-form-item .layui-input-inline{width:inherit;}
+.layui-form-select dl{background-color:#EBEFF2;}
+.layui-form-select dl dd:hover{background-color:#ccc}
+.layui-layer-dialog .layui-layer-content span{width:80px;display:inline-block;}
+.f30{font-size:30px!important;}
+.f26{font-size:26px!important;}
+.f24{font-size:24px!important;}
+.f20{font-size:20px!important;}
+.f18{font-size:18px!important;}
+.f16{font-size:16px!important;}
+.f12{font-size:12px!important;}
+.w90{width:90px!important;}
+.head{height:50px!important;background:#fff!important;}
+.head .tit{line-height:50px!important;}
+.head .tit span{color:#1C8EE3!important;margin-right:20px!important;position:relative;top:-3px;}
+
+#config{background:url("../img/bg.jpg")!important}
+.start{text-align:center;margin:50px;color:#fff;}
+.start .txt{margin:50px auto;}
+.start p{line-height:40px;}
+
+
+#ready{display:table;margin-top:90px;}
+.inbox{margin:50px auto;text-align:center}
+#ready .box{width:380px;border:1px solid #ACACAC;margin:15px;display:inline-block;height:500px;float:left;}
+#ready .box.cur{border-color:#188CEA}
+#ready .box .tit{ position:relative;background:#acacac;height:40px;line-height:40px;color:#fff;font-size:18px;}
+#ready .box.cur .tit{ background:#55A1F4;}
+#ready .box .tit i{position:absolute;top:0px;left:120px;}
+#ready .box .txt{padding:50px 20px;text-align:left;}
+#ready .box .txt h3{font-size:26px;color:#333}
+#ready .box .txt p{font-size:16px;color:#999;min-height:50px;margin-top:10px;}
+
+.inbox .example{overflow:hidden;margin:10px 20px;}
+.inbox .example li.ico{background:url("../img/icon.png") 0 0 no-repeat;}
+.inbox .example li{color:#999;padding-top:80px;width:70px;float:left;display:inline-block;}
+.inbox .example li:hover{color:#188CEA}
+.inbox .example li.line{height:1px;border-top:1px solid #188CEA;margin:35px 10px 0 10px;width:40px;}
+.inbox .example li.dashedline{height:1px;border-top:1px dashed #999;margin:35px 10px 0 10px;width:40px;}
+
+.lan .tit{font-size:50px;line-height:200px;margin-top:100px;}
+.lan ul{width:65%;margin:0 auto;overflow:hidden}
+.lan li.line{width:200px!important}
+.lan li.dashedline{width:200px!important;border-color:#188CEA!important}
+
+.config{width:50%;margin:60px auto;}
+.config .tit{font-size:30px;line-height:70px;}
+
+#ready .box{cursor:pointer}
+#ready .box.cur .i1{background-position:0px 0px!important;}
+#ready .box.cur .i2{background-position:-140px 0!important;color:#188CEA!important}
+#ready .box.cur .i3{background-position:-280px 0px!important}
+#ready .box.cur .i4{background-position:0px -300px!important}
+#ready .box.cur .i5{background-position:-140px -300px!important;color:#188CEA!important}
+#ready .box.cur .i6{background-position:-280px -300px!important}
+.i1{background-position:0px -200px!important;}
+.i2{background-position:-140px -200px!important;}
+.i3{background-position:-280px -200px!important}
+.i4{background-position:0px -100px!important}
+.i5{background-position:-140px -100px!important}
+.i6{background-position:-280px -100px!important}
+.i7{background-position:0px -200px!important}
+.iok{background-position:25px -400px!important;color:#15C63E!important;width:120px!important;}
+.ierr{background-position:-115px -400px!important;color:red!important;width:120px!important;}
+
+.succ{text-align:center;font-size:36px;margin-top:280px;}
+.succ i{font-size:50px;color:#15C63E;display:inline-block;}
+.succ span{position:relative;top:-8px;left:15px;}

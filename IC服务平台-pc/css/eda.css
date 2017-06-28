@@ -1,0 +1,19 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+
+#eda .title{text-align:center;position:relative;margin-bottom:30px;}
+#eda .title span{color:#2F69A5;font-size:20px;padding:10px 30px;background:#fff;z-index:999;position:relative}
+#eda .title:after{position:absolute;height:1px;width:100%;top:50%;left:0;content:'';background:#ddd;z-index:2}
+.page_container {overflow: hidden;}
+#eda .banner {width: 100%;min-width: 1030px;height: 280px;background: url('../images/banner/banner-eda.jpg') center center no-repeat;}
+#eda .reg{width:55%;margin:0 auto}
+#eda p{line-height:25px;margin:5px 0}
+#eda p i{color:red}
+#eda p input[type="text"]{border:1px solid #ddd; padding:10px; line-height:20px;width:100%;margin-bottom:20px;}
+label{margin-right: 20px;}
+#eda table{margin-bottom:30px; border-left:1px solid #ddd;border-top:1px solid #ddd;font-size:12px;width:100%}
+#eda table td{border-bottom:1px solid #ddd;border-right:1px solid #ddd;line-height:46px;height:46px;padding:0 10px;}
+#eda table input{height:30px;width:70%;line-height:20px;padding:0 10px;}
+#eda form p a{display:inline-block; width:120px;height: 34px;line-height:34px;text-align:center;border-radius:8px;margin-right: 20px;}
+#eda form p a.ok{background:#259FFB;color:#fff}
+#eda form p a.cancel{background:#cbcbcb;}

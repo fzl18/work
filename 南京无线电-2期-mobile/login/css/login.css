@@ -1,0 +1,38 @@
+ /*CSS Document by Richie*/
+@charset "utf-8";
+a{text-decoration:none;}
+body{background:#fff;margin:0 auto;}
+img{width:100%;vertical-align:middle;}
+a:hover,a:link,a{text-decoration:none!important;display: inline-block;color:#333;}
+.content-padded{margin:.3rem;}
+.content{background:#fff}
+.content .content-body{min-height:88.8%;}
+footer{clear:both;background:#fff;}
+footer p{text-align: center;color:#999;font-size:.26rem;padding: .3rem .1rem;margin-top: 0.4rem;}
+
+/*登录*/
+#login .list-block{margin:0;font-size:0.453333rem;position:relative;margin-bottom:1rem}
+#login .list-block.dl:after{content:'';height:1px;width:92%;position:absolute;left:0;bottom:0;background:#e7e7e7;margin:0 .3rem;}
+#login .list-block img{width:0.746667rem;height:0.746667rem;border-radius:50%;}
+#login .list-block.pw .tit{text-indent:0}
+#login .list-block.pw .item-content{padding-left:.6rem;}
+#login .list-block.cf .after, #user .list-block.cf .tit{font-size:0.373333rem;}
+#login .list-block.pw input{width:90%;display:block;height:.9rem;line-height:.9rem ; font-size:0.426667rem}
+#login .list-block.pw .after{text-align:left}
+#login .other{margin:1.5rem 0;}
+#login .other .tit{position: relative;text-align:center;}
+#login .other .tit:before{content:'';height:1px;width:92%;position:absolute;left:0;top:50%;background:#d5d5d5;margin:0 .3rem;}
+#login .other .tit span{display:inline-block; text-align:center;color:#999;font-size:0.32rem;width:2.933333rem;margin:0 auto;background:#fff;position:relative;z-index:200}
+#login .other img.qq{width:0.506667rem;height:0.586667rem;}
+#login .other img.wx{width:0.72rem;height:0.586667rem;}
+#login .other img.sina{width:0.653333rem;height:0.586667rem;}
+#login .login-button{position:relative;}
+/*注册登录*/
+#reg{background:url("../images/login-bg.jpg") no-repeat; background-size:cover;}
+#reg .loginbox{background:#fff;border-radius:.3rem;margin:0 .5rem;}
+#reg .logo{width:5.333333rem;margin:1rem auto .5rem auto;}
+#reg .loginbox .list-block.pw input{font-size:.35rem;padding:0;width:100%;}
+#reg a{font-size:.4rem; display:block;text-align: center;border-radius:.3rem;margin:.4rem;height:1.333333rem;line-height: 1.333333rem;}
+#reg a.reg{color:#fff;background:#3D93EB;}
+#reg a.fgt{padding:0;margin:.15rem .3rem;height:1rem;line-height:1rem; position: absolute;bottom:0;right:0;color: #3D93EB;font-size:0.32rem}
+#reg .list-block .item-link .item-inner{background-position: calc(100% - .3rem) center}

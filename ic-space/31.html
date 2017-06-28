@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="基础选项" />
+    <meta name="Description" content="基础选项" />
+    <title>31</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/code-public.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plus.css">
+</head>
+<body>
+
+<a href="javascript:;" class="button btn-3 btn_change_pwd">修改密码</a>
+<a href="javascript:;" class="button btn-3 btn_install_pack">打包进度</a>
+<a href="javascript:;" class="button btn-3 btn_change_info">身份认证信息</a>
+
+<!-- 弹窗_修改密码 start-->
+<div id="change_pwd">
+    <h1 class="f18">修改密码</h1>
+    <input type="password" name="old_pwd" placeholder="原密码" />
+    <input type="password" name="new_pwd" placeholder="新密码" />
+    <input type="password" name="re_pwd" placeholder="再输一次" />
+    <input type="submit" value="确认修改" class="OK" />
+    <input type="button" value="取消" class="close"/>
+</div>
+<!-- 弹窗_修改密码 end-->
+
+
+<!-- 弹窗_打包 start-->
+<div id="install_pack">
+    <ul>
+        <li>正在打包，请稍等……</li>
+        <li><div class="load_bg"><span class="load_bar" style="width: 42%">42%</span></div></li>
+        <li><a href="javascript:;" class="close fr">取消</a></li>
+    </ul>
+</div>
+<!-- 弹窗_打包 end-->
+
+<!-- 弹窗_身份信息确认 start-->
+<div id="change_info">
+    <div class="fl">
+        <ul>
+            <li><i class="red">*</i>真实姓名:</li>
+            <li><i class="red">*</i>身份证号:</li>
+            <li style="padding-bottom: 130px;"><i class="red">*</i>身份证照片:</li>
+            <li><i class="red">*</i>手机号码:</li>
+            <li><i class="red">*</i>验证码:</li>
+        </ul>
+    </div>
+    <div class="fl">
+        <ul>
+            <li><input type="text" name="name" placeholder="姓名"> </li>
+            <li><input type="text" name="namecard" placeholder="身份证号码"> </li>
+            <li><div class="img_upload"><input class="hand" type="file" name="" /><div class="img_txt"><i class="fa fa-image f20"></i>上传身份证照片</div></div></li>
+            <li><input type="text" name="tel" id="tel" placeholder="手机号"> </li>
+            <li><input type="text" name="" placeholder="验证码" style="width: 40%">
+            <span class="fr" id="gettime"><b>重新发送(0s)</b><input type="button" value="点击发送验证码" class="fr"></span></li>
+            <li><input type="submit" value="提交" class="OK"> </li>
+        </ul>
+    </div>
+    
+</div>
+<!-- 弹窗_身份信息确认 end-->
+
+
+<!-- Script -->
+<script src="lib/require-min.js" data-main='js/main'></script>
+</body>
+</html>

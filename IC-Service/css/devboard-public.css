@@ -1,0 +1,113 @@
+/* CSS Document by cchen*/
+@charset "utf-8";
+/* 公共样式 */
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, b, small, u, i, center, dl, dt, dd, ol, ul, li,  sub, sup, tt, var, del, dfn,  ins, kbd, q, s, samp,  strike, applet, object, iframe, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, blockquote, pre, a, abbr, acronym, address, big, cite, code, mark, audio, video, input, textarea, select { margin:0; padding:0;}	
+
+ol, ul{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:12px;}
+html { /*overflow-x:hidden;*/ -webkit-text-size-adjust:none;  word-break:break-all; }
+body { font-size:12px; font-family:"helvetica neue",helvetica,"hiragino sans gb",arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",sans-serif;  color:#666; background:#F2F2F2; line-height:1; }
+body.whiteBG{ background:#fff;}
+body.grayBG{ background:#f6f7f8;}
+body.f4BG{ background:#f4f4f5;}
+.under_white{ position:relative;}
+.under_white:before{ content:''; display:block; width:1200px; height:100%; position:absolute; left:50%; top:0; margin-left:-600px; background:#fff; z-index:-1;}
+/*a 链接*/
+a {
+	color:#666;
+	text-decoration:none;
+	outline:none;
+	-webkit-transition:color 0.2s linear;
+    -moz-transition:color 0.2s linear;
+    -o-transition:color 0.2s linear;
+    transition:color 0.2s linear;
+}
+a:hover{text-decoration:underline; color:#216360;}
+
+/*
+a { text-decoration:none; outline:none;}
+a:link { color:#666666; }
+a:visited { color:#666666; }
+a:hover, a:active, a:focus { color:#00b6e1;}
+*/
+
+/*图片居中*/
+.jzimg { display:table-cell; *display:block; overflow:hidden; font:0px/0px 'Arial'; text-align:center; vertical-align:middle;}
+fieldset, img { border:0; vertical-align:middle}
+
+.jzimg img,.jzimg i{vertical-align:middle; max-width:100%; max-height:100%;}
+.jzimg i{height:100%; display:inline-block;}
+
+img{ max-width:100%; max-height:100%;}
+/*浮动*/
+.fl {float:left; display:inline}
+.fr {float:right; display:inline}
+.clear { clear:both}
+.clearfix { *zoom:1;}
+.clearfix:after{clear:both; display:block; height:0; visibility:hidden; line-height:0; content:'\20';}
+.txl{ text-align:left;}
+.txr{ text-align:right;}
+.txc{ text-align:center;}
+
+/* HTML5 重置为较旧版本的浏览器 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 按钮样式 */
+input, button, textarea, select { font-size:100%; outline:none; resize:none; border:none;font-family:"helvetica neue",helvetica,"hiragino sans gb",arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",sans-serif; vertical-align:middle;}
+input[type="button"]{cursor:pointer; border:0}
+input[type="submit"]{cursor:pointer; border:0}
+input[type="reset"]{cursor:pointer; border:0}
+
+.button{ border-radius:4px;}
+a.button{}
+a.button:hover{text-decoration:none;}
+
+
+/*删除火狐下按钮默认样式*/
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{ border:none; padding:0; }
+
+
+/*字体大小、缩进*/
+.f12 { font-size:12px;}
+.f13 { font-size:13px;}
+.f14 { font-size:14px;}
+.f16 { font-size:16px;}
+.f18{ font-size:18px;}
+.f20{ font-size:20px;}
+.t2{text-indent:2em;}
+
+/*通用标签*/
+.vam{ vertical-align:middle;}
+.no_warp{white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.page_container{ width:1200px; margin:0 auto;}
+.hidden{ display: none !important;}
+.no_pointer{pointer-events: none;}
+.two_line{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+
+.tab_child{ display:none;}
+.tab_body .on{ display:block;}
+/*悬浮窗*/
+.fix_box{ position:absolute; left:50%; margin-left:612px; top:0px; z-index:999; transition:top 0.8s ease;}
+@media(max-width:1366px){.fix_box{ left:auto; right:5px;margin-left:0;}}
+
+/*-----公共部分页面样式-------*/
+html{height:100%;}
+body{height:100%;}
+#page{ min-height:100%; margin-bottom:-108px; position:relative; z-index:1;}/*footer:height = 68*/
+#page:after{ content:''; display:block; clear:both; height:108px; width:100%;}
+#page article{ *padding-bottom:108px;}
+/* footer */
+footer{text-align:center; padding:30px 0; line-height:24px; position:relative; z-index:2;}
+footer p a{ margin:0 5px;}
+footer.indigo{ background:#192e41; color:#fff;}
+footer.indigo a{ color:#fff;}
+footer.black{ background:#282b2e; color:#fff;}
+footer.black a{ color:#fff;}
+footer.blue{ background:#0071c5; color:#fff;}
+footer.blue a{ color:#fff;}

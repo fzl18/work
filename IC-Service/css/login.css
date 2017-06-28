@@ -1,0 +1,35 @@
+/*#login{background:#F0F0F0}*/
+.box{background:#fff;margin-top:90px;padding:40px;}
+#login .left{float:left;width:40%;margin-top:20px;}
+#login .left p{text-align:center;}
+#login .left a{color:#FF5F00;text-decoration:underline;}
+#login .left .footer{margin-top: 50px;color:#999;font-size:12px;line-height:20px;}
+#login .right{width:50%}
+#login .right .title{padding:0 0 20px 0}
+#login .right .title span{display:block;cursor:pointer; padding:15px 65px;border-bottom:2px solid #ddd;}
+#login .right .title span.cur{color:#18599D;border-bottom-color: #18599D}
+#login .form{font-size:16px;}
+/*#login .form ul{display:none}*/
+#login .form ul ul{display:inline-block;width:70%;margin-left:30px;}
+#login .form ul ul li{float:left;width:50%;line-height:30px;}
+#login .form li{/* height:70px;*/line-height:70px;font-size:16px;position:relative}
+#login .form input[type="text"],#login .form select{border:1px solid #ddd;padding:10px;border-radius:8px;margin-left:15px;width:72%;font-size:14px;line-height:20px;height:20px;position:relative;}
+#login .form select{height:40px;width:76%}
+#login .form span.err{position:absolute;bottom:-10px;left:95px;color:red;line-height:20px;height:20px;font-size:12px;}
+#login .form .send-code{position:absolute;right:38px;top:16px;display:block;width:120px;height:42px;line-height:40px;background:#17599D;color:#fff;text-align:center;border-radius:0 8px 8px 0;font-size:14px;border:1px solid #17599D}
+#login .form input:disabled{background:#fff;color:#17599D;border-color:#17599D!important;cursor:default}
+#login i{color:red}
+#login button{cursor:pointer; display:block;background:#17599D;color:#fff;width:100%;border-radius:10px;height:46px;margin:20px 0;}
+
+
+
+
+.uploader{position:relative;display:block;height:initial!important;overflow:hidden;margin:10px 0 10px 80px;}
+.uploader .filename{float:left;display:inline-block;width:180px;padding-left: 50px!important;cursor:default;font:12px/90% Arial, Helvetica, sans-serif; color:#aaa;text-overflow:ellipsis;white-space:nowrap;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAYAAAD6FjQuAAACD0lEQVRIDa1W2arCMBCd1rrvO/ogLrj8/7/4oCDogyCooOKCay8nkJCkjbblDhST6WTOLGdiLdd1XdLk9XrRZrMhx3Eok8lQOp2meDyuWYXfWgB7PB4kY2Jt2zbTvd9v5jUWiwX2DlsEqouzWCzocDjoerIsS+jkQITyywKB9no9KpVKipVzPB4VBd+EBeDn8Pv5fOh+v9P5fGZPNptlrXCQ7vP5lG3/ZY0+Xy4XWq/XzB967i1sCKhKpUKtVotlslqt6Hq9itOojNw3JGSLtyEXiUSC9SWVSjHGDodDpc+6O5AmMpg+CnIWOhD2jOF+L4LoUDL0hMt2u1XGh+v5Lxj6s2f5fJ4xC7MoCyKdzWZUq9VYz/b7vfzas0a5v4JVq1XqdruEwZ5Opx7WAhAZBRGw09izZDLJgOAIzR2NRkF8Gm2QmRFMdw7jfr+vOMOw5nI5RWfaGMHgFNTWpVwus7mCHiCTyYTG43EgQN8yFgoFglOTtNttqtfrSpa/ZgyBY1SUMoKeg8HAhCP0nU5H+cvBOb3EwpiIUEKIAMMtj5LgYBTBDd9sNn2PooQQQX2AgcagOSgdVhAkbns/8YDBcLfb+dlG1vGgRRm5IrJHw0H45ZkKMK4wnImsxsWMbxkI/6RwwKLT6cSikD8FoqLABzJBn+bzuWAi/DnFYpHw/JegUrfbjZbLJSNao9EQrv8ALTzBlB4R1TcAAAAASUVORK5CYII=') 10px center no-repeat;}
+.uploader .filename2{margin-top:10px; min-width:initial!important;text-align:center; display:inline-block;width:130px;height:80px!important;padding-top:50px!important;cursor:default;font:12px/90% Arial, Helvetica, sans-serif; color:#aaa;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAyCAYAAAD1CDOyAAABCElEQVRoBe2ZQQ7DIAwEIeoz+V3yTqiadqWASg5r+xC0vSBsbJEZWik0t9Zaevhne/j+z+2/vB/iOI7blqWU2zyTXMKEHoJRH1EjExFUmZ4ywVCLqJGJCKpMT5lgqEXUyEQEVaanTDDUImpkIoIq01MmGGoRNXnf90ffdnze2XWcIo4G01MmGGoRNTIRQZXpuYSJ7H0rrrtY5iyllNxvxfF3R8652xLiXdBpssR3wt3Etn25jOQRd4LftZGJDsdvMhrAmlkcecsoE1d6II1fJcyxZoxjjrxllIkrPZCttZ5hzLFmFkfeMsrEP3qjAayZxZG3jEuY0ENYjoBnrUx40rT0kgkLPc/aN+mdMGf2Yd2gAAAAAElFTkSuQmCC') center 20px no-repeat;border:1px dashed #ff0000!important}
+.uploader .btn{position:absolute;display:block;padding:10px 20px;right: 38px;top:0;cursor:pointer;background:#17599D;color:#fff;border-radius:0 5px 5px 0}
+.uploader input[type=file]{position:absolute;top:0; left:0;height:40px;width:90%;cursor:pointer;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity:0;}
+.uploader input.file2{top:10px;height:140px;width:150px;cursor:pointer;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity:0;}
+
+.viewpic{position:relative;top:10px;left:30px;}
+.edapic{display:none}

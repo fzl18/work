@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>6</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" href="css/setting.css">
+
+</head>
+<body>
+	<div class="head blue">
+		<div class="layui-main">
+			<div class="logo"></div>
+			<a class="back fr f16" href="#">返回首页</a>		
+		</div>
+	</div>
+	<div class="layui-main">
+		<div class="title f30">互联网设置</div>
+		<div class="bre"><ul><li class="cur" style="width:45.5% ">场景配置</li><li style="width:45.5% ">完成设置</li></ul></div>
+		<div class="f18">当前场景: 中继 / 桥接</div>
+		<div class="form">
+			<div class="tip">
+				<p>提示</p> 
+				<p>1、组网后形成一个独立的无线网络和密码。</p> 
+				<p>2、建议将主路由器将无线信道修改为固定值,如信道9.</p> 
+				<p>3、主路由器需要修改地址池，空出一部分给从路由。</p> 
+				<p>4、主路由一定要工作在路由模式（宽带新装）</p> 
+			</div>
+			<form class="layui-form ">
+				<div class="layui-form-item">
+				      <input type="radio" name="network" value="30" title="中继模式">
+				      <input type="radio" name="network" value="31" title="桥连模式" checked>
+				  </div>
+
+					  <div class="layui-form-item">
+				        <select name="wan" lay-verify="required">
+				          <option value="">请选择无线名称</option>
+				          <option value="华为">华为</option>
+				          <option value="360">360</option>
+				          <option value="腾讯">腾讯</option>
+				          <option value="百度">百度</option>
+				        </select>
+					   </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入无线密码" autocomplete="off" class="layui-input">
+					  </div>
+
+					  <div class="layui-form-item">
+					      <input type="text" name="title3" placeholder="请输入主路由DNS1" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title4" placeholder="请输入主路由DNS2" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title5" placeholder="请输入DHCP服务器地址 (需避开主路由地址)" autocomplete="off" class="layui-input">
+					  </div>
+					  <div class="layui-form-item" style="width:103%">
+					      <div class="layui-inline">
+					        <label class="layui-form-label">设置开始地址</label>
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO1" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO2" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO3" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO4" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					   </div>
+					   <div class="layui-form-item" style="width:103%">
+					      <div class="layui-inline">
+					        <label class="layui-form-label">设置结束地址</label>
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO5" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO6" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO7" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					      <div class="layui-inline">
+					        <div class="layui-input-inline">
+					          <input type="text" name="NO8" autocomplete="off" class="layui-input w90">
+					        </div>
+					      </div>
+					   </div>
+				  <div class="layui-form-item" style="margin-top:30px;text-align:center">
+				      <button class="layui-btn layui-btn-normal f14">完成设置</button>
+				  </div>
+			</form>
+		</div>
+	</div>
+	
+
+<script src="lib/layui/lay/dest/layui.all.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

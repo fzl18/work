@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="开发者平台" />
+    <meta name="Description" content="开发者平台" />
+	<title>8</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/code-public.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plus.css">
+</head>
+<body>
+<!-- 顶部导航 H*60 -->
+<div id="head_menu">
+	<div class="fl logo"><a href="#"><img src="images/frameIcon/code_logo.png"></a></div>
+    <div class="fl head_name">IC开发者空间</div>
+    <div class="fl top_search">
+        <div class="clearfix">
+            <input type="text" class="sotx" placeholder="输入搜索内容">
+            <input type="submit" class="sobt" value="">
+        </div>
+    </div>
+    <div class="fr top_link">
+    	<div class="fl link_box">
+            <a href="#"><img src="css/icon/not.png"><span class="hidden">通知</span></a>
+            <a href="#"><img src="css/icon/mail.png"><span class="hidden">消息</span></a>
+            <a href="#"><img src="css/icon/set.png"><span class="hidden">设置</span></a>
+        </div>
+        <div class="fr min_menu">
+        	<div class="admin">
+                <!-- .pic 中data-num 属性值为提示的信息数量 -->
+            	<a href="#" class="pic" data-num="3"><img src="images/frameIcon/min_adpic.jpg"></a><a href="#" class="name">sy174350</a><em></em>
+            </div>
+            <div class="list" id="">
+            	<ul>
+                	<li><a href="#"><i class="fa fa-tasks"></i>项目</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>账户</a></li>
+                    <li><a href="#"><i class="fa fa-power-off"></i>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 左侧导航栏 W*100 -->
+<div id="sidebar_menu">
+	<div class="adm on"><a href="#"><img src="images/frameIcon/min_adpic.jpg"></a></div>
+	<ul class="list">
+    	<li class="item"><a href="#"><i><img src="css/icon/jh.png"></i><span class="hidden">计划</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/xq.png"></i><span class="hidden">需求</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/rw.png"></i><span class="hidden">任务</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/dm.png"></i><span class="hidden">代码</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/bb.png"></i><span class="hidden">版本</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/wj.png"></i><span class="hidden">文件</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/sz.png"></i><span class="hidden">设置</span></a></li>
+    </ul>
+</div> 
+<!-- 这里才是主要区域 -->
+<div id="wrapper">
+	<!-- 预留二级侧边 -->
+    <div id="bar2">
+    	<div class="bar2_title">Git仓库</div>
+        <div class="bar2_list">
+        	<ul>
+            	<li><a href="#"><i class="fa fa-code"></i>代码</a></li>
+                <li><a href="#"><i class="fa fa-code-fork"></i>分支</a></li>
+                <li><a href="#"><i class="fa fa-tag"></i>标签</a></li>
+                <li><a href="#"><i class="fa fa-copy"></i>合并请求</a></li>
+                <li><a href="#"><i class="fa fa-line-chart"></i>项目统计</a></li>               
+            </ul>
+        </div>
+
+        <hr>
+        <div class="bar2_list c2">
+            <ul>
+                <li>HTTPS  SSH  方式访问仓库:</li>
+                <li><input type="text" placeholder="https://git.ic" /><a href="#" class="btn"><i class="fa fa-cloud-upload"></i></a></li>
+                <li>建议使用Git  2.6.0 以上的版本</li>
+         
+            </ul>
+        </div>
+    </div>
+    <!-- 如果有二级侧边 则+.min -->
+	<div class="section_box min">
+        <div class="two_box">
+            <div class="left_box">
+                <div class="full_th">                    
+                    <select><option value="master">master</option></select>
+                    <span>项目名</span> / <i class="fa fa-plus" style="color: #09f;"></i>                    
+                </div>
+                <form action="" method="post">
+                <div class="full_tab_list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4"><img src="images/frameIcon/min_adpic.jpg" width="30" height="30" alt=""> <span class="username f14"> username </span>  update README.md  <span class="fr">11b950c89 <i class="fa fa-file f18"></i>  提交于2016-04-19  16:54</span></th>                                
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="height: 50px; line-height: 50px; color: #999;"><i class="fa fa-file-text-o f20"></i><span style="margin-left: 10px;">file  |  183.00 bytes </span>
+                                    <div class="fr">
+                                        <input type="button" value="编译">
+                                    </div>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/res/codea.png" alt="" width="251" height="214"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="full_th">
+                    <i class="fa fa-info-circle f20"></i><span class="title f16">提交说明 </span>               
+                </div>
+                <div class="full_tab_list">
+                    <table>
+                        <tr>
+                            <td><textarea name="" id="info" cols="20" rows="6" placeholder="update composer.json"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td align="right"></td>
+                        </tr>                           
+                    </table>
+                </div>
+                <div class="fr submit">
+                    <input type="reset" value="取消" />
+                    <input type="submit" value="提交到master分支" /><i class="fa fa-pencil f18"></i>
+                </div>
+                </form>          
+            </div>
+        </div>      
+
+    </div>
+
+
+</div><!-- 主要区域 end -->
+
+
+
+
+
+<!-- Script -->
+<script src="lib/require-min.js" data-main='js/main'></script>
+</body>
+</html>

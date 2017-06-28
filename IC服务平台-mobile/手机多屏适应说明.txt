@@ -1,0 +1,11 @@
+引用
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+
+原文链接：http://caibaojian.com/mobile-responsive-example.html
+元素的尺寸该如何计算，比如说设计稿上某一个元素的宽为150px，换算成rem应该怎么算呢？这个值等于设计稿标注尺寸/该设计稿对应的html的font-size。拿淘宝来说的，他们用的设计稿是750的，所以html的font-size就是75，如果某个元素时150px的宽，换算成rem就是150 / 75 = 2rem
+
+布局的时候，各元素的css尺寸=设计稿标注尺寸/设计稿横向分辨率/10
+
+===============================================================================
+
+工具 用less工具，或者用sublime 插件 cssrem 自动转

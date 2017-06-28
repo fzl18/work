@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>上网情况1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" href="css/setting.css">
+
+</head>
+<body>
+	<div class="head blue">
+		<div class="layui-main">
+			<div class="logo"></div>
+			<a class="back fr f16" href="#">返回首页</a>		
+		</div>
+	</div>
+	<div class="layui-main">
+		<div class="title f30">故障诊断</div>
+		<div class="bre">
+			<ul>
+				<li style="width:28.9% ">接口连接</li>
+				<li style="width:28.9% ">系统情况</li>
+				<li class="cur" style="width:28.9% ">上网情况</li>
+			</ul>
+		</div>
+		<div class="f18 ">第三步诊断：上网情况 </div>
+		<div class="table">
+			<table class="layui-table">
+				<colgroup>
+					<col width="250">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>故障情况：</td>
+						<td>无法上网</td>
+					</tr>
+					<tr>
+						<td>故障描述：</td>
+						<td>PPPoE服务器未提供上网参数</td>
+					</tr>
+					<tr>
+						<td>故障归属：</td>
+						<td>运行商的宽带服务器不回应上网参数</td>
+					</tr>
+					<tr>
+						<td>故障代码：</td>
+						<td>615错误 （同电脑故障码）</td>
+					</tr>
+					<tr>
+						<td>其它问题：</td>
+						<td>MTU值在当前网络工作不正常，会影响网速，建议在互联网设置中修改为“1475”</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>提示：<span class="gray">PPPoE服务器未提供上网参数可能是因为网络较忙，建议过一会再试。</span></div>
+		</div>
+		<div class="next-btn fr">
+			<a href="" class="layui-btn layui-btn-normal">完成</a>
+		</div>
+	</div>
+	
+
+<script src="lib/layui/lay/dest/layui.all.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

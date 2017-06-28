@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="IC服务平台">
+	<meta name="description" content="IC服务平台">
+	<link rel="stylesheet" href="css/sm.css">
+	<link rel="stylesheet" href="css/sm-extend.css">
+	<link rel="stylesheet" href="css/mobile-base.css">
+	<link rel="stylesheet" href="css/mobile-index.css">
+	<script src="js/zepto.js"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+	<div class="page" id="mproduct">
+	<header class="bar bar-nav">
+		<a class="icon icon-left pull-left back"></a>		
+		<a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" ></a>
+		<h1 class="title">产品中心</h1>
+	</header>
+
+	<!-- 菜单栏 -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+	  <div class="content-block">
+	  	<a href="mlogin.html">
+	  		<div class="user-login">
+	  		<img src="images/pic2.jpg" alt="">
+	  		<!-- 如果未登录显示图标
+	  		<span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> 
+	  		-->
+	  		</div>
+	  		<div>请登录/用户名</div>
+	  	</a>
+	    <ul class="content-padded">
+	    	<li><a href="mproduct_list.html">在线交易</a></li>
+          <li><a href="mfinance_index.html">金融服务</a></li>
+          <li><a href="mjob_index.html">人才服务</a></li>
+          <li><a href="mtrain_index.html">培训服务</a></li>
+          <li><a href="mpackage_index.html">设计众包</a></li>
+        </ul>
+        <div class="icon icon-home"><a href="/">返回首页</a></div>   
+	  </div>
+	</div>
+	<!-- 菜单栏 结束-->
+
+	<div class="content">			
+		<!-- 产品图片 -->
+		  <div class="swiper-container" data-space-between='10'>
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="images/pic4.jpg" alt=""></div>		      
+		    </div>
+		    <!-- <div class="swiper-pagination"></div> -->
+		  </div>
+			<!-- 内容详情 -->
+			<article class="product-info">			
+				<div class="tit">XNUCLEO-F030R8 STM32开发板 <a class="buy-btn" href="javascript:;">立即购买</a></div>
+				<div class="info">兼容NUCLEO-F030R8的开发板，基STM32F030R8T6。如果你了解NUCLEO，就知道我支持mbed开发平，还打通了Arduino生态圈。另外，我其实是NUCLEO的进化版，号称XNUCLEO，就像XMEN一样，有特异功能。</div>
+				<ul class="buy-product">
+					<li class="price">市场价: <span>¥258</span></li>
+					<li class="free">每人免费提供: <span>1</span>个</li>
+					<li class="apply">已申请: <span>106</span>人</li>
+				</ul>
+			</article>
+			<div class="product-detail">
+				<div class="buttons-tab">
+				    <a href="#tab1" class="tab-link active button">商品详情</a>
+				    <a href="#tab2" class="tab-link button">累计评价(0)</a>
+				 </div>
+				<div>
+				<div class="content-block">
+				    <div class="tabs">
+				      <div id="tab1" class="tab active">
+				        <div class="content-block">
+				          <img src="images/pic5.jpg">
+									<div class="content-padded">
+										<span>初识xnucleo－f030r8</span><br>
+										<span>自我介绍</span>
+										我是块兼容nucleo-r030r8的开发版，基于stm32f030r8t6。<br>如果你了解nucleo，就知道我支持mbed开发平台，还打通了Arduino生态圈。<br>另外，我其实是nucleo的进化版，号称xnucleo，就像xmen一样，又特异功能。<br>
+										<span>我的特点</span> <br>
+										
+										● 兼容nucleo-r030r8，基于cortex-M3 STM32F030R8T6 <br>
+										● 兼容Arduino，支持各种Arduino扩展版，接入Arduino庞大生态系统，获得更多潜在的资源 <br>
+										● 提供ST Morpho扩展排针，弥补Arduino I/O接口较少的缺陷，方便自由连接周边设备 <br>
+										● 支持mbed，支持mbed SDK及在线工具快速搭建产品原型，缩短开发周期 <br>
+										● 配合mbed在线资源，即可参考不断更新的丰富的STM32综合库软件HAL以及各种封装好的例程。<br>
+										
+										<span>图解xnucleo－f030r8</span>
+										<img src="images/pic6.jpg" />
+										<span>［芯片简介］</span> <br>
+										<ol>
+											<li>STM32F030R8T6 <br>
+										   内核：ARM®32-bit CortexTM-M0 <br> 工作频率：48MHz<br>
+										   工作电压：2.4V-2.6V<br>
+										   封装：LQFP64<br>
+										   存储资源：64kB Flash,8kB SRAM<br>
+										   接口资源：2 x SPI，2 x USART，2 x 12C<br>
+										   模数转换：1 x AD(12位，16通道)<br></li>
+										   <li>SPX3819M5 <br>
+				   							3.3V稳压器件 <br></li>
+				   							<li>AMS1117-5.0 <br>
+										   5.0V稳压器件 <br>
+										   CP2102 <br>
+										   USB转串口芯片 <br></li>
+										</ol>	
+										<span>［接口简介］</span>
+										<ol>
+											<li>Arduino接口 <br>
+   											便于接入各种Arduino扩展版(Shield)</li>
+   											<li>ICSP接口 <br>
+   											Arduino的ICSP接口</li>
+										</ol>
+									</div>
+				        </div>
+				      </div>
+				      <div id="tab2" class="tab">
+				        <div class="content-block">
+				          <p style="text-align: center;">暂无评论！</p>
+				        </div>
+				      </div>
+				    </div>
+				 </div>
+
+				</div>
+			</div>
+		
+
+	<div class="gotop"></div>
+	<footer class="foot">
+		<p>Copyright©2016|无锡德思普科技有限公司.All Rights Reserved.苏ICP备110718</p>
+	</footer>
+	</div>
+	</div>
+	</div>
+	<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+	<script src="js/vue.js"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

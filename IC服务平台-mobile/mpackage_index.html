@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta name="keywords" content="IC服务平台">
+    <meta name="description" content="IC服务平台">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <link rel="stylesheet" href="css/mobile-index.css">
+    <script src="js/zepto.js"></script>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page" id="mproduct">
+            <header id="header" class="bar bar-nav">
+                <a class="icon icon-left pull-left back"></a>
+                <a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;"></a>
+                <h1 class="title">设计众包</h1>
+            </header>
+            <!-- 菜单栏 -->
+            <div class="panel-overlay"></div>
+            <div class="panel panel-right panel-cover theme-white" id='side-nav'>
+                <div class="content-block">
+                    <a href="mlogin.html">
+                        <div class="user-login">
+                            <img src="images/pic2.jpg" alt=""></div>
+                        <div>请登录/用户名</div>
+                    </a>
+                    <ul class="content-padded">
+                        <li><a href="mproduct_list.html">在线交易</a></li>
+                        <li><a href="mfinance_index.html">金融服务</a></li>
+                        <li><a href="mjob_index.html">人才服务</a></li>
+                        <li><a href="mtrain_index.html">培训服务</a></li>
+                        <li><a href="mpackage_index.html">设计众包</a></li>
+                    </ul>
+                    <div class="icon icon-home"><a href="/">返回首页</a></div>
+                </div>
+            </div>
+            <!-- 菜单栏 结束-->
+            <div id="mpackage" class="content">
+                <!-- banner滚动栏 -->
+                <div class="swiper-container" data-space-between='10'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/package_banner.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="total">
+                    <div class="row no-gutter">
+                        <a class="col-33" href="mpackage_release.html" style="color:#e54a4a;border-right: thin solid #ddd;">
+                            <img src="images/mpackage_fabao.jpg"><span>我要发包</span>
+                        </a>
+                        <a class="col-33" href="mpackage_task.html" style="color:#38c0b8">
+                            <img src="images/mpackage_jiebao.jpg"><span>我要接包</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 产品列表 -->
+                <div class="product-list">
+                    <div class="buttons-tab">
+                        <a href="#tab1" class="tab-link active button"><span>任务大厅</span></a>
+                        <a href="#tab2" class="tab-link button"><span>众包任务</span></a>
+                        <a href="#tab3" class="tab-link button"><span>成功案例</span></a>
+                    </div>
+                    <div class="tabs">
+                        <!-- 任务大厅 -->
+                        <div id="tab1" class="tab product-list active">
+                            <div class="list-block project">
+                                <ul class="list-container">
+                                    <a href="mpackage_hall.html">
+                                        <li>
+                                            <div class="mpackage_list_tit">51单片机STM32 MCU 驱动软件</div>
+                                            <div class="mpackage_list_time">报名截止时间：<b>2016-09-20</b><span>（还剩 29 天）</span></div>
+                                            <div class="mpackage_list_money"><b>¥</b> 23000 <span>已有<b> 9 </b>人申请</span></div>
+                                            <div class="mpackage_list_intro">发包方：IC+互联网平台 &nbsp;&nbsp;发布时间：2016-08-20</div>
+                                        </li>
+                                    </a>
+                                    <a href="mpackage_hall.html">
+                                        <li>
+                                            <div class="mpackage_list_tit">51单片机STM32 MCU 驱动软件</div>
+                                            <div class="mpackage_list_time">报名截止时间：<b>2016-09-20</b><span>（还剩 29 天）</span></div>
+                                            <div class="mpackage_list_money"><b>¥</b> 23000 <span>已有<b> 9 </b>人申请</span></div>
+                                            <div class="mpackage_list_intro">发包方：IC+互联网平台 &nbsp;&nbsp;发布时间：2016-08-20</div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <div class="mpackage_list_more">
+                                    <a href="mpackage_hall.html">
+                                        << 查看更多任务</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 众包任务 -->
+                        <div id="tab2" class="tab product-list">
+                            <div class="list-block project">
+                                <ul class="list-container2">
+                                    <a href="mpackage_taskdetail.html">
+                                        <li>
+                                            <img src="images/pic20.jpg">
+                                            <div class="mpackage_list_tit">智慧门人机对话系统研发</div>
+                                            <div class="mpackage_list_price">任务金额：<span>¥ <b>100000</b></span></div>
+                                        </li>
+                                    </a>
+                                    <a href="mpackage_taskdetail.html">
+                                        <li>
+                                            <img src="images/pic20.jpg">
+                                            <div class="mpackage_list_tit">智慧门人机对话系统研发</div>
+                                            <div class="mpackage_list_price">任务金额：<span>¥ <b>100000</b></span></div>
+                                        </li>
+                                    </a>
+                                    <a href="mpackage_taskdetail.html">
+                                        <li>
+                                            <img src="images/pic20.jpg">
+                                            <div class="mpackage_list_tit">智慧门人机对话系统研发</div>
+                                            <div class="mpackage_list_price">任务金额：<span>¥ <b>100000</b></span></div>
+                                        </li>
+                                    </a>
+                                    <a href="mpackage_taskdetail.html">
+                                        <li>
+                                            <img src="images/pic20.jpg">
+                                            <div class="mpackage_list_tit">智慧门人机对话系统研发</div>
+                                            <div class="mpackage_list_price">任务金额：<span>¥ <b>100000</b></span></div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <div class="mpackage_list_more">
+                                    <a href="mpackage_task.html">
+                                        << 查看更多任务</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 成功案例 -->
+                        <div id="tab3" class="tab product-list">
+                            <div class="list-block project">
+                                <ul class="list-container3">
+                                    <a href="mpackage_case.html">
+                                        <li>
+                                            <div class="mpackage_list_tit">嵌入式物联网软硬件开发平台 OpenFPGA duino</div>
+                                            <div class="mpackage_list_money"><b>¥</b> 1200 <span>开发者：wyn</span></div>
+                                            <div class="mpackage_list_intro">不仅提供了基于nodejs网络交互能力特别是用于开发的网络IDE以及类似树莓派的linux软件开发系统方便安装各种linux通用软件，而且通过FPGA提供了可编程的兼容arduino外围接口用于与丰富的物联网传感器进行连接。似树莓派的linux软件开发系统方便安装各种linux通用软件，而且通过FPGA提供了可编程的兼容arduino外围接口用于与丰富的物联网传感器进行连接。</div>
+                                            <div class="mpackage_list_case">
+                                                <img src="images/mpackage_list_case1.jpg">
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <div class="mpackage_list_more">
+                                    <a href="mpackage_case.html">
+                                        << 查看更多案例</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gotop"></div>
+                <footer class="foot">
+                    <p>Copyright©2016|无锡德思普科技有限公司.All Rights Reserved.苏ICP备110718</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

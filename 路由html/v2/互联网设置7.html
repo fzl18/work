@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>7</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" href="css/setting.css">
+
+</head>
+<body>
+	<div class="head blue">
+		<div class="layui-main">
+			<div class="logo"></div>
+			<a class="back fr f16" href="#">返回首页</a>		
+		</div>
+	</div>
+	<div class="layui-main">
+		<div class="title f30">互联网设置</div>
+		<div class="bre"><ul><li class="cur" style="width:45.5% ">场景配置</li><li style="width:45.5% ">完成设置</li></ul></div>
+		<div class="f18">当前场景: 中继 / 桥接</div>
+		<div class="form">
+			<div class="tip">
+				<p>提示</p> 
+				<p>1、中继模式比较适合大户型,别墅,产生信号与主路由相同.</p> 
+				<p>2、建议将主路由器将无线信道修改为固定值,如信道9.</p> 
+				<p>3、本路由器此时会关闭DHCP服务.</p> 
+				<p>4. 摆放的位置可以用手机查看该处信号是否上网顺畅.</p> 
+			</div>
+			<form class="layui-form ">
+				<div class="layui-form-item">
+				      <input type="radio" name="network" value="30" title="中继模式" checked>
+				      <input type="radio" name="network" value="31" title="桥连模式">
+				  </div>
+
+					  <div class="layui-form-item">
+				        <select name="wan" lay-verify="required">
+				          <option value="">请选择无线名称</option>
+				          <option value="华为">华为</option>
+				          <option value="360">360</option>
+				          <option value="腾讯">腾讯</option>
+				          <option value="百度">百度</option>
+				        </select>
+					   </div>
+					  <div class="layui-form-item">
+					      <input type="text" name="title2" placeholder="请输入无线密码" autocomplete="off" class="layui-input">
+					  </div>
+				  <div class="layui-form-item" style="margin-top:30px;text-align:center">
+				      <button class="layui-btn layui-btn-normal f14">完成设置</button>
+				  </div>
+			</form>
+		</div>
+	</div>
+	
+
+<script src="lib/layui/lay/dest/layui.all.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

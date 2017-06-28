@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="keywords" content="在线资源-南京无线电-手机版">
+	<meta name="description" content="在线资源-南京无线电-手机版">
+	<link rel="stylesheet" href="mobile-style/css/sm.css">
+    <link rel="stylesheet" href="mobile-style/css/sm-extend.css">
+	<link rel="stylesheet" href="mobile-style/css/mobile-index.css">
+	<script src="mobile-style/js/zepto.js"></script>
+	<script src="mobile-style/js/flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page" id="courses">
+			<header class="bar bar-nav">
+				<h1 class="title">在线资源</h1>
+				<a class="pull-left back"><img class="back" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAsCAYAAADFP/AjAAAEkElEQVRoBdWZXUybVRjH//0utHRdhbVb+XAwoCQzyIwy2QwzOhPZ4sLilSFeuMVkuzAxMdGpcXGJGThZoomKm4YLEm+Mu1g0UFAEhmx+bYkTwlhKacsYG2MwShn20zwveZva9215W/r1npvT9znnPM/zO6fn4zlHEgqFQkhhIm3WsTmcG3LiwrEnUqhZuCq58Krxa7IwZ/vsGJ1xo0CdMtXxDfOUpsTyLzfm8bHVhr+n3TwmMi/aEBTBtPdN4ppzKfOex7GYFNRl2wJae2z40/EgjursFSUERTDtfXZcnlzInscCLAuCuup8gNPdNozYchuG5Y0LRTDtvXYMTMyz9UWR80L9c8uNNqsN/ePJw3j9QZy/5BLUCSq5BGqFDAqZBAaNEkadEiWGPGiUMkHtoytJIjdfgjn7kx3W0bnoeln5Lt6sRm2xDs9UGrC/phCmTSpBfjBQE3c8aOuxoSdHYPg8l0iAhorNONZYhn1Vj4C+YyXJyYs3Ql8Pu5Daw1Isc6mR7yrdhDMvW2AxaXkVSh56A6GuK9P49OcpLKz4eCvlolAuk+CjQ9Vo2W3muBeeUx5vAJ2/utAx6BQV3JvPb8dbL5T/DywMxUoJ7pthF74YcMC96mfFCedyqQTP1RQKbrfiDcAfCDEdemfp34Q69nRzNV59ujhsiwPFliw99OP8sJNZlpOBo1P6+KlGVl3COU0FOlP2j9/Dj9fv4q7bG1OHQiZF9xtPombr2hyLCcVqILhzl5z4asgJ6k2haaNQkXZ8gSC+vzqL1m4b5pb54eq368Px27pQrPL7Hh86Bh3oHJkWBJdKqEgfXu+6HvPs+e3ROjRWGSBlG6yXGzQKvNu0A7+d2IPj+8qgkgtuup5qweXkQ9eRWjz1qJ63TefI2gkmYc9I8XtNO3DlnQYc3VuScbg8hQwdLTt5I2uK72j+JwzFdtEWnQofvlQVhqN9I1PJqFPheGMZxxytnkM37ycPxWpk4UbebmA2wkzBvVK/DVKesxJFFkmPFAvF5ma9Gm2HLWDg6s2gfSqdqVCrxK5SHcfE2MwyBK9+nNbrCG4troJA05lOXpwAnVsjU0VRfupGKlIx/U43ENkoNeRFm2U26ZT9/TjaMyDgu1vc0OqXAZ+TNiHqkaIrA74kaihajKKTUi5N30IRbSwd36O3lzlqi7RK8ULRX+93+yIHapteLV6o3rF7vEFstUkjTqhAMITP+qc4o0QCupQR5ULx+YCDeQOLpqKj4LOJxFPRCrL1feHaLM5YJ3nNU5xFB2zea2feFlkWrvqC+KR3El8OOmJ68tqeEqYs56EWV3zM/UTHkBMzPPsSS7jTXICmx4rWh6J7Cboyy1Ty+YOY93jhWljFxKyHedT7Y2oR/mD8t3YKc1qbLeH4Ku5InfrhJr7763ammJK288HBStRFxFaiXP0i6U+8WIEje9fmEiuPO1JspVzMtSoZWg9b0Fxn4rgnOijaiw7VGvH+gUpsjfFeJRoo2n+aHzeipd6M8qJ8zuhECnIOKl8pw5YCeiJVodKoQY1Ji93lelQbtXEf2iKh/gO/bZvXW2fYbQAAAABJRU5ErkJggg==" alt=""></a>		
+				<a class="pull-right open-panel " data-panel='#side-nav'><img class="main-nav" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAsCAYAAADfAxCtAAACL0lEQVRoBe2azUsbQRjGn53Ej0QlldRgCVhRqBEVsUhDb5ZeGsSD4sWvi9dCzyIWeioepP9AwYvQ9lIhJy9CDlJoC6bxUNBCEQ0Rc4g0avxYsztl4mF1IDnsGtgZZ27v7M7u83ufZdj33dX0okHfr/3Fpx8ZnF4akGU01nkwGQ1jPtYJDxmcfvdxYx+6QWXhK3Ewns29PAq6Ce3JQoLK5CDvFHOUnOkmPy9VzPjIi0hQKigehvGRxdEuRFob+WNSxIyL8WmUUmqYFMn9PHKFKyngGESwoQZP2wLwEO0aUhqyMiCkzLxU0wpSFjuVk8pJgTKgHleBzKooVTlZMT0CHfQ60VrQDRy59H33gc+LpvprPFuQV4aJt/E/+PzzAEXTnR0FomkY6Q9habwbtiA/rO9i5XvGyUNQ9bUmpYinsvDXemBr44n/ylZd5F3dYDV5aA9SN8RpmRiU2oMc7gvdVaKrfp1XPS32IOdinYj1tlRdoNMbPO9oxuJYxFlnIPPvAumjC1Dqsh1WAx4F6tEe9JXyVOrxOM2Y29fb2l3dDsXrU5B8RkSNlZOiOsfrVk7yGRE1Vk6K6hyv+144eatoZoXmVvoE2ZNLPhnCxezT3UBbAF6iWZ0B1quZWU4hlT4WDqicYPYRdmW236pC3nz5ja/Jw3LnCzv/svuhVU8mdnLCglQSntjOWZCs4SPj8NcSC3IqGpaRERPPwtbG83roMfSiieVvaeTPi8ID3/zt7D+WtqMSMpLj7wAAAABJRU5ErkJggg==" alt=""></a>
+				
+			</header>
+			<div class="content" style="background:#F4F6FA">
+				
+				<!-- 详情 -->				
+				<div class="vedio detail" style="min-height:15rem">
+        	
+        	<div class="tit resou">EditPlus最新官方下载</div>
+        	<div class="see">2016-11-29 10:15:28</div>
+        	<div class="txt">支持代码折叠；支持代码自动完成(但其功能比较弱)，支持代码提示功能；配置功能强大，且比较容易，扩展也比较强。像PHP、Java程序等的开发环境，只要看一下资料，几分钟就可以搞定配置，很适合初学者学习使用。有不错的项目工程管理。</div>
+        	<div class="download"><a href="javascript:;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAYAAACB4MgqAAAD8klEQVRYCe2ZW2yMQRTH//t1rdoqql0UrahqS4M2rSAVlxc88IAgTSNxaUKCR/HmwYN4J0GKiEuFiBASvLiURhOlfdCoEpIWtUqJXtKLduU/NWPa7O73dTutjThJd87OnDnn19P5pvOdcQUCgQA0KXvdjMtPP+LJ2+9oaulCbyCAzMlxuLo7DxPjRmmWodWXja0oLKmCywWUFudiTvLY0MbaSHNbNzaeeIY6fxsslwu+eA+WpE3A5vypWJ4xUbME3PLbt/Zu7LtUg/uvvsou1b7yt6H8TTPWLZis+sIp16v9aGrtEibUnYIzBqEpTJj/Ryc4nz8rMxNxtDAbCd6+5Fk0IvS6Y5VBoTme5vOiIL3/byy8h/jo6O5RI7quOkMojDHL5w06yoSSkawUkfG9pTV496VdTVg1NwnFS1ORlRwHT4yF+Fj1h1E2w6FwKZbtX4KWjp/o6ulFbWMbTpc34G5NkwhHRrJeLM6B+2FdMx7U/VkeB9fOxq5lqcPB5dinTFRBugcF6Qk4WVaPQ7dei/lkvVf7Fdblyo/KITP9t6EVjKaQaXW2T/Vcfd4Iq+Ltd9Wxc2mK0qNN2VEwXSGR2eKWJyVrirNtS9qPZKuzfW7phMVtRwofxGgVnY3I0Utqk8H/4DYJMj78P+PGU2rj8N/OOE9nB67VgqfE4RL6ZgzGciK2p6eGbx3YU/pC+LpR7cel4lzkpo5z4tuxTVX9DxSeqhKHqwsVH5A3YzxSEmLDzrddKl6PhdhRfWY8tTEAA5kSHZo+GWvM73jhYtiCJ8Z5cLxoHtwxLuHHJPxAaMZgrKSxnnDMYswWnFY8NZZsnW8UPhg0YzCWE3EELuHPbltgZNkMhObyOL8jxzE0eRyD05jvfee25wwJPhg0fS6b7fzVcNDgnMA3kkjhQ0HT52BlUBmXziOBNwlNjojAOXEw8KahhwQeDv6z9lZFXf5z4Rw+iFxqkSwPzpcSccalg2CZv/2ir5xAG+rc+ymmoOlryOB0MhC+u6dXgPJD6iahjYEHg1fkhjMt/RrJuHQmM++2+o4H7KduYk3LGLI1Ck6nhD+8PlNUW1lxPbIha8gPooTVW9tjrW7sVC9aNA1bFk4V5nr2nc53YudmVmRthYVGU2IaWGdj3d1i8VxK7adWqUZdq7NNih8Na3HaBAV5pvy90qNN0dnIbG3KS1aMrEOXPKpX36NFIZOskZNpc34yXLwDKjpV3a9GvibbB1ZuWWg0vVadJuNnbwBcHqcfN+DO78I+567ISBSFfQEur1L0WwmnAUbSbmaSFzf35ot7ILGP80KIHXxRiFYhm4Qmo8i4DsurlSuV/a8L9fGR0u2uC38Bn2jevHnu3qsAAAAASUVORK5CYII=" alt=""> 点击下载</a></div>
+					
+        </div>
+
+
+				<footer class="foot" style="background:none">
+					<p>Copyright© 2016 | 南京芯元通信息技术有限公司. All Rights Reserved. 苏ICP备11071881号</p>
+				</footer>
+			</div>			
+		</div>
+
+		<!-- 菜单栏 开始-->
+		<div class="panel-overlay"></div>
+		<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+		  <div class="content-block">
+		  	<div class="close-panel menu">菜单 <span class="icon icon-right"></span></div>		  	
+		    <ul>
+		    	<li><a href="index.html">首页</a></li>
+		    	<li><a href="product.html">产品服务</a></li>
+		    	<li><a href="case.html">典型案例</a></li>
+		    	<li><a href="courses.html">网上课程</a></li>
+		    	<li><a class="active" href="resources.html">在线资源</a></li>
+		    	<li><a href="bbs.html">在线交流</a></li>
+		    	<li><a href="about.html">中心介绍</a></li>
+		    	<li><a href="news.html">新闻&问题</a></li>	
+		    </ul>
+		    <div class="user-login">
+		    	<div class="row" style="margin-bottom:.4rem">
+		    		<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+		    		<div class="col-40">血战钢锯岭の戴斯蒙德<br><a href="user.html">进入个人中心 >></a></div>
+		    		<div class="col-40"><a class="logout pull-right" href="javascript:;">注销</a></div>
+		    	</div>
+		    	<!-- 未登陆 -->
+		    	<!-- <div class="row">
+		    		<div class="col-100"><a class="button button-fill login" href="javascript:;">登录</a></div>	
+		    	</div> -->
+		    </div>  
+		  </div>
+		</div>
+		<!-- 菜单栏 结束-->
+	</div>
+	<script type='text/javascript' src='mobile-style/js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='mobile-style/js/sm-extend.js' charset='utf-8'></script>
+	<script src="mobile-style/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

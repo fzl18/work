@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="keywords" content="新闻中心-南京无线电-手机版">
+	<meta name="description" content="新闻中心-南京无线电-手机版">
+	<link rel="stylesheet" href="mobile-style/css/sm.css">
+    <link rel="stylesheet" href="mobile-style/css/sm-extend.css">
+	<link rel="stylesheet" href="mobile-style/css/mobile-index.css">
+	<script src="mobile-style/js/zepto.js"></script>
+	<script src="mobile-style/js/flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page" id="live">
+			<header class="bar bar-nav">
+				<h1 class="title">在线直播</h1>
+				<a class="pull-left back"><img class="back" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAsCAYAAADFP/AjAAAEkElEQVRoBdWZXUybVRjH//0utHRdhbVb+XAwoCQzyIwy2QwzOhPZ4sLilSFeuMVkuzAxMdGpcXGJGThZoomKm4YLEm+Mu1g0UFAEhmx+bYkTwlhKacsYG2MwShn20zwveZva9215W/r1npvT9znnPM/zO6fn4zlHEgqFQkhhIm3WsTmcG3LiwrEnUqhZuCq58Krxa7IwZ/vsGJ1xo0CdMtXxDfOUpsTyLzfm8bHVhr+n3TwmMi/aEBTBtPdN4ppzKfOex7GYFNRl2wJae2z40/EgjursFSUERTDtfXZcnlzInscCLAuCuup8gNPdNozYchuG5Y0LRTDtvXYMTMyz9UWR80L9c8uNNqsN/ePJw3j9QZy/5BLUCSq5BGqFDAqZBAaNEkadEiWGPGiUMkHtoytJIjdfgjn7kx3W0bnoeln5Lt6sRm2xDs9UGrC/phCmTSpBfjBQE3c8aOuxoSdHYPg8l0iAhorNONZYhn1Vj4C+YyXJyYs3Ql8Pu5Daw1Isc6mR7yrdhDMvW2AxaXkVSh56A6GuK9P49OcpLKz4eCvlolAuk+CjQ9Vo2W3muBeeUx5vAJ2/utAx6BQV3JvPb8dbL5T/DywMxUoJ7pthF74YcMC96mfFCedyqQTP1RQKbrfiDcAfCDEdemfp34Q69nRzNV59ujhsiwPFliw99OP8sJNZlpOBo1P6+KlGVl3COU0FOlP2j9/Dj9fv4q7bG1OHQiZF9xtPombr2hyLCcVqILhzl5z4asgJ6k2haaNQkXZ8gSC+vzqL1m4b5pb54eq368Px27pQrPL7Hh86Bh3oHJkWBJdKqEgfXu+6HvPs+e3ROjRWGSBlG6yXGzQKvNu0A7+d2IPj+8qgkgtuup5qweXkQ9eRWjz1qJ63TefI2gkmYc9I8XtNO3DlnQYc3VuScbg8hQwdLTt5I2uK72j+JwzFdtEWnQofvlQVhqN9I1PJqFPheGMZxxytnkM37ycPxWpk4UbebmA2wkzBvVK/DVKesxJFFkmPFAvF5ma9Gm2HLWDg6s2gfSqdqVCrxK5SHcfE2MwyBK9+nNbrCG4troJA05lOXpwAnVsjU0VRfupGKlIx/U43ENkoNeRFm2U26ZT9/TjaMyDgu1vc0OqXAZ+TNiHqkaIrA74kaihajKKTUi5N30IRbSwd36O3lzlqi7RK8ULRX+93+yIHapteLV6o3rF7vEFstUkjTqhAMITP+qc4o0QCupQR5ULx+YCDeQOLpqKj4LOJxFPRCrL1feHaLM5YJ3nNU5xFB2zea2feFlkWrvqC+KR3El8OOmJ68tqeEqYs56EWV3zM/UTHkBMzPPsSS7jTXICmx4rWh6J7Cboyy1Ty+YOY93jhWljFxKyHedT7Y2oR/mD8t3YKc1qbLeH4Ku5InfrhJr7763ammJK288HBStRFxFaiXP0i6U+8WIEje9fmEiuPO1JspVzMtSoZWg9b0Fxn4rgnOijaiw7VGvH+gUpsjfFeJRoo2n+aHzeipd6M8qJ8zuhECnIOKl8pw5YCeiJVodKoQY1Ji93lelQbtXEf2iKh/gO/bZvXW2fYbQAAAABJRU5ErkJggg==" alt=""></a>		
+				<a class="pull-right open-panel " data-panel='#side-nav'><img class="main-nav" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAsCAYAAADfAxCtAAACL0lEQVRoBe2azUsbQRjGn53Ej0QlldRgCVhRqBEVsUhDb5ZeGsSD4sWvi9dCzyIWeioepP9AwYvQ9lIhJy9CDlJoC6bxUNBCEQ0Rc4g0avxYsztl4mF1IDnsGtgZZ27v7M7u83ufZdj33dX0okHfr/3Fpx8ZnF4akGU01nkwGQ1jPtYJDxmcfvdxYx+6QWXhK3Ewns29PAq6Ce3JQoLK5CDvFHOUnOkmPy9VzPjIi0hQKigehvGRxdEuRFob+WNSxIyL8WmUUmqYFMn9PHKFKyngGESwoQZP2wLwEO0aUhqyMiCkzLxU0wpSFjuVk8pJgTKgHleBzKooVTlZMT0CHfQ60VrQDRy59H33gc+LpvprPFuQV4aJt/E/+PzzAEXTnR0FomkY6Q9habwbtiA/rO9i5XvGyUNQ9bUmpYinsvDXemBr44n/ylZd5F3dYDV5aA9SN8RpmRiU2oMc7gvdVaKrfp1XPS32IOdinYj1tlRdoNMbPO9oxuJYxFlnIPPvAumjC1Dqsh1WAx4F6tEe9JXyVOrxOM2Y29fb2l3dDsXrU5B8RkSNlZOiOsfrVk7yGRE1Vk6K6hyv+144eatoZoXmVvoE2ZNLPhnCxezT3UBbAF6iWZ0B1quZWU4hlT4WDqicYPYRdmW236pC3nz5ja/Jw3LnCzv/svuhVU8mdnLCglQSntjOWZCs4SPj8NcSC3IqGpaRERPPwtbG83roMfSiieVvaeTPi8ID3/zt7D+WtqMSMpLj7wAAAABJRU5ErkJggg==" alt=""></a>
+				
+			</header>
+			<div class="content" style="background:#F5F5F5">
+				<!-- 课程介绍 -->
+				<div class="pic"><img src="mobile-style/images/live-1.jpg" alt=""></div>
+				<div class="detail buttons-tab fixed-tab" data-offset="1.2">
+			      <a href="#tab1" class="tab-link active button"><span>课程概述</span></a>
+			      <a href="#tab2" class="tab-link button"><span>讲师介绍</span></a>
+			    </div>
+
+				<div class="tabs">			
+			      <div id="tab1" class="tab infinite-scroll active">
+			        <div class="list-container">
+			          <div class="head">
+			          	<div class="t-info">
+				          	<dl>
+				          		<dt>.NET/C#全栈开发工程师VIP【系统学习C/S和B/S两个方向】</dt>
+				          		<dd>报名时间： 2017-01-08至2017-02-02</dd>
+				          		<dd>直播时间： 2017-03-20   20：00</dd>
+				          		<dd style="height:1.2rem;margin-top:.3rem">价格：<span class="price"><em>¥</em> 3660.00 </span>
+				          		<a class="pull-right add" href="javascript:;">我要报名</a></dd>
+				          	</dl>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="n-stu">
+				          	<dl>
+				          		<dt>最新学员 <span>已有29人报名</span></dt>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          	</dl>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="c-detail">
+			          		<div class="d-tit">简介</div>
+			          		<p>从零开始，系统掌握.NET/C#高级工程师具备的知识体系！积累3-4年的工作经验，学后顺利就业或在职快速提升！</p>
+			          		<p><img src="mobile-style/images/live-content.jpg" alt=""></p>
+			          	</div>
+			          </div>
+
+		            </div>
+			      </div>
+
+			      <div id="tab2" class="tab infinite-scroll">
+			        <div class="list-container">
+			          <div class="head">
+			          	<div class="t-info">
+				          	<dl>
+				          		<dt>.NET/C#全栈开发工程师VIP【系统学习C/S和B/S两个方向】</dt>
+				          		<dd>报名时间： 2017-01-08至2017-02-02</dd>
+				          		<dd>直播时间： 2017-03-20   20：00</dd>
+				          		<dd style="height:1.2rem;margin-top:.3rem">价格：<span class="price"><em>¥</em> 3660.00 </span>
+				          		<a class="pull-right add" href="javascript:;">我要报名</a></dd>
+				          	</dl>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="c-detail">
+			          		<div class="d-tit">讲师介绍</div>
+			          		<div class="t-pic"><img src="mobile-style/images/user.jpg" alt=""><a href="javascript:;">高级讲师兼CTO-常老师</a></div>
+			          		<p>喜科堂互联教育创始人，主讲.NET、JAVA、移动开发技术、项目架构设计等系列课程，十几年互联网软件开发工作和教学经验，喜科堂各品牌课程主编，讲课风趣幽默，深受学员喜欢。</p>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="n-stu">
+				          	<dl>
+				          		<dt>最新学员 <span>已有29人报名</span></dt>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          		<dd><img src="mobile-style/images/user.jpg" alt="">LAB5</dd>
+				          	</dl>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="c-detail">
+			          		<div class="d-tit">学员留言<span>（120）</span></div>
+			          		<div class="message row">
+			          			<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+			          			<div class="col-80">
+			          				<div class="name">LAB5...</div>
+			          				<div class="time">2017-02-14</div>
+			          				<div>第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</div>
+			          			</div>
+			          		</div>
+			          		<div class="message row">
+			          			<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+			          			<div class="col-80">
+			          				<div class="name">LAB5...</div>
+			          				<div class="time">2017-02-14</div>
+			          				<div>第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</div>
+			          			</div>
+			          		</div>
+			          		<div class="message row">
+			          			<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+			          			<div class="col-80">
+			          				<div class="name">LAB5...</div>
+			          				<div class="time">2017-02-14</div>
+			          				<div>第一次参加老师的课程是在公开课，老师的讲解一下子解开了我心中的疑惑，后来想着系统学习就报班了，一步一步按照老师的讲解，感觉非常的通俗易懂，课程非常的棒，老师的每次直播都是一次大收获。</div>
+			          			</div>
+			          		</div>
+			          		<div class="more"><a href="javascript:;">加载更多留言</a></div>
+			          	</div>
+			          </div>
+			          <div class="head">
+			          	<div class="c-detail">
+			          		<div class="d-tit">发表回复</div>
+			          		<form action="">
+			          			<div class="t-pic"><img src="mobile-style/images/user.jpg" alt=""> <input type="text" placeholder="我来说两句"></div>
+			          		</form>
+			          	</div>
+			          </div>
+
+		            </div>
+			      </div>
+
+		    </div>
+
+
+<!-- 				<footer class="foot">
+					<p>Copyright© 2016 | 南京芯元通信息技术有限公司. All Rights Reserved. 苏ICP备11071881号</p>
+				</footer> -->
+			</div>			
+		</div>
+
+		<!-- 菜单栏 开始-->
+		<div class="panel-overlay"></div>
+		<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+		  <div class="content-block">
+		  	<div class="close-panel menu">菜单 <span class="icon icon-right"></span></div>		  	
+		    <ul>
+		    	<li><a href="index.html">首页</a></li>
+		    	<li><a href="product.html">产品服务</a></li>
+		    	<li><a href="case.html">典型案例</a></li>
+		    	<li><a href="courses.html">网上课程</a></li>
+		    	<li><a href="resources.html">在线资源</a></li>
+		    	<li><a href="bbs.html">在线交流</a></li>
+		    	<li><a href="about.html">中心介绍</a></li>
+		    	<li><a class="active" href="news.html">新闻&问题</a></li>	
+		    </ul>
+		    <div class="user-login">
+		    	<div class="row" style="margin-bottom:.4rem">
+		    		<div class="col-20"><img src="mobile-style/images/user.jpg" alt=""></div>
+		    		<div class="col-40">血战钢锯岭の戴斯蒙德<br><a href="user.html">进入个人中心 >></a></div>
+		    		<div class="col-40"><a class="logout pull-right" href="javascript:;">注销</a></div>
+		    	</div>
+		    	<!-- 未登陆 -->
+		    	<!-- <div class="row">
+		    		<div class="col-100"><a class="button button-fill login" href="javascript:;">登录</a></div>	
+		    	</div> -->
+		    </div>  
+		  </div>
+		</div>
+		<!-- 菜单栏 结束-->
+	</div>
+	<script type='text/javascript' src='mobile-style/js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='mobile-style/js/sm-extend.js' charset='utf-8'></script>
+	<script src="mobile-style/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

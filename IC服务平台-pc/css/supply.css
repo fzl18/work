@@ -1,0 +1,135 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+
+#supply .left_nav{border:1px solid #DDD;padding:20px;border-radius:6px;width:20%;}
+#supply .left_nav .tit{font-size: 20px;text-align:center;border-bottom:1px solid #DDD;padding-bottom:10px;margin-bottom:20px;}
+#supply .left_nav li{font-size:16px;max-height:70px;line-height:26px;overflow:hidden;margin-bottom:15px;}
+#supply .left_nav li a:hover{color:#3FA9DF}
+#supply .left_nav li .supply{color:#61B458}
+#supply .left_nav li .procurement{color:#FF7921}
+#supply .right{display:table-cell;width:70%}
+#supply .right .title{font-size:26px;color:#333; text-align:center}
+#supply .right .title span{font-size:14px;color:#999;line-height:80px;}
+#supply .right .content{font-size:16px;color:#333;line-height:36px;}
+
+
+
+.page_container {
+    overflow: hidden;
+}
+
+.foot {
+    min-width: 970px;
+}
+#supply .banner {
+    width: 100%;
+    min-width: 1030px;
+    height: 248px;
+    background: url('../images/banner/gq_banner.jpg') center center no-repeat;
+}
+
+#supply .supply_list {
+    width: 49%;
+    overflow: hidden;
+    float: left;
+    margin: 0 0.5%;
+    margin-top: 20px;
+}
+
+#supply .supply_list ul li {
+    width: 90%;
+    float: left;
+    border-bottom: 1px solid #d5d7dc;
+}
+
+#supply .supply_pic {
+    width: 24%;
+    float: left;
+    text-align: left;
+}
+
+#supply .supply_info {
+    width:100%;
+    float: left;
+    margin: 20px 0;
+    color: #878686;
+}
+
+.supply_tit a {
+    color: #000;
+    font-size: 16px;
+}
+
+.supply .supply_tit span{color:#5FB653;margin-right: 10px;}
+.procurement .supply_tit span{color:#FF7A00;margin-right: 10px;}
+
+.supply_money span {
+    color: #666666;
+    font-size: 16px;
+    line-height: 35px;
+    margin-right: 55px;
+}
+
+.supply_money span em {
+    font-style: inherit;
+    color: #e83227;
+}
+
+.supply_intro {
+    overflow: hidden;
+    float: left;
+    margin-top: 10px;
+    font-size: 1.05em;
+    line-height: 22px;
+}
+
+.supply_time {
+    overflow: hidden;
+    float: right;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.supply_list ul li:hover {
+    background-color: #f7f7f7;
+
+}
+
+.supply_theme {
+    width: 90%;
+    text-align: left;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    height:26px;   
+    border-bottom:1px solid #E8EAEC;
+    color:#fff;
+}
+
+
+.supply_theme span{
+    background:#2C6AA9;
+    padding: 5px 15px;
+}
+
+.plaza_page_num {
+    text-align: center;
+    padding: 70px;
+}
+
+.plaza_page_num a {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #d6d7dc;
+    color: #185a9d;
+    font-size: 13px;
+    margin: 2px;
+    background-color: #efeff4;
+    border-radius: 3px;
+}
+
+.plaza_page_num a.page_this {
+    color: #fff;
+    background: #185a9d;
+}

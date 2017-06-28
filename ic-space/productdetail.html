@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="基础选项" />
+    <meta name="Description" content="基础选项" />
+    <title>productdetail</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/code-public.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plus.css">
+</head>
+<body>
+<!-- 顶部导航 H*60 -->
+<div id="head_menu">
+    <div class="fl logo"><a href="#"><img src="images/frameIcon/code_logo.png"></a></div>
+    <div class="fl head_name">IC开发者空间</div>
+    <div class="fl top_search">
+        <div class="clearfix">
+            <input type="text" class="sotx" placeholder="输入搜索内容">
+            <input type="submit" class="sobt" value="">
+        </div>
+    </div>
+    <div class="fr top_link">
+        <div class="fl link_box">
+            <a href="#"><img src="css/icon/not.png"><span class="hidden">通知</span></a>
+            <a href="#"><img src="css/icon/mail.png"><span class="hidden">消息</span></a>
+            <a href="#"><img src="css/icon/set.png"><span class="hidden">设置</span></a>
+        </div>
+        <div class="fr min_menu">
+            <div class="admin">
+                <!-- .pic 中data-num 属性值为提示的信息数量 -->
+                <a href="#" class="pic" data-num="3"><img src="images/frameIcon/min_adpic.jpg"></a><a href="#" class="name">sy174350</a><em></em>
+            </div>
+            <div class="list" id="">
+                <ul>
+                    <li><a href="#"><i class="fa fa-tasks"></i>项目</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>账户</a></li>
+                    <li><a href="#"><i class="fa fa-power-off"></i>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 左侧导航栏 W*100 -->
+<div id="sidebar_menu">
+    <div class="adm"><a href="#"><img src="images/frameIcon/min_adpic.jpg"></a></div>
+    <ul class="list">
+        <li class="item"><a href="#"><i><img src="css/icon/xm.png"></i><span class="hidden">项目</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/rw.png"></i><span class="hidden">任务</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/cp.png"></i><span class="hidden">产品</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/hy.png"></i><span class="hidden">好友</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/zh.png"></i><span class="hidden">账户</span></a></li>
+    </ul>
+</div> 
+<!-- 这里才是主要区域 -->
+<div id="wrapper">
+<!-- 预留二级侧边 -->
+    <div id="bar2">
+        <div class="bar2_title">产品详情</div> 
+        <div class="bar2_info">项目任务管理，可以新建任务并指派给团队成员</div>
+        <div class="bar2_list">
+            <ul>
+                <li><a href="#"><i class="fa fa-folder-open"></i>基础信息</a></li>
+                <li><a href="#"><i class="fa fa-file"></i>发布历史</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>审核中心</a></li>
+            </ul>
+        </div>
+        <hr style="margin-top: 100px;">
+    </div>
+    <!-- 如果有二级侧边 则+.min -->
+    <div class="section_box min">
+        <!-- 左右两格 -->
+        <div class="two_box">
+            <!-- left -->
+            <div class="left_box">
+                <div class="full_box">
+                    <div class="sec_title">
+                        <span>基础信息</span>                        
+                    </div>
+                    <div class="base_setting">
+                        <ul class="text f16 add_porduct">
+                            <li><input type="text" name="" placeholder="VTL容灾复制方案V1.0" /></li>
+                            <li><textarea name="" id="" cols="30" rows="8" placeholder="　　随着数据量激增，传统备份方式下。备份容量会越来越大。因为备份系统的特点是要求能保存生产数据的多个副本拷贝。使用传统方式，会使得备份数据量日益激增。造成对备份系统管理和成本上都相对应增加。
+　　重复数据删除(Deduplication)技术，简单来说，就是一种消除重复数据的技术，它用软件或硬件的方式，对存储数据进行处理，以消除其中的重复数据，从而减小数据占用的存储空间。" ></textarea></li>
+                            <li class="tab_title">
+                                <label data-name="sole" class="hand"><input type="radio" name="typeof" checked="true" />销售 </label>
+                                <label data-name="zc" class="hand"><input type="radio" name="typeof"/>众筹 </label>
+                                <label data-name="zce" class="hand"><input type="radio" name="typeof"/>众测 </label>
+                                <label data-name="ft" class="hand"><input type="radio" name="typeof"/>风投 </label>
+                                <span class="f14">(产品发布类型，根据选择发布到各相应平台)</span>
+                            </li>
+                            <li>
+                                <div class="tab_body" style="border:none;">
+                                    <ul class="tab_child" data-name="sole">
+                                        <li>
+                                            <select id="">
+                                              <option value="选择项目">选择项目</option>
+                                              <option value="项目1">项目1</option>
+                                              <option value="项目2">项目2</option>
+                                              <option value="项目3">项目3</option>
+                                              <option value="项目4">项目4</option>
+                                            </select>
+                                            <select id="">
+                                              <option value="选择版本">选择版本</option>
+                                              <option value="v1.0.1">v1.0.1</option>
+                                              <option value="v1.0.2">v1.0.2</option>
+                                              <option value="v1.0.3">v1.0.3</option>
+                                              <option value="v1.0.4">v1.0.4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <input type="text" style="width:60%" placeholder="输入销售价格" />
+                                        </li>
+                                    </ul>
+                                    <ul class="tab_child" data-name="zc">
+                                        <li>
+                                            <select id="">
+                                              <option value="选择项目">选择项目</option>
+                                              <option value="项目1" selected="true">项目1</option>
+                                              <option value="项目2">项目2</option>
+                                              <option value="项目3">项目3</option>
+                                              <option value="项目4">项目4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <input type="text" style="width:60%" placeholder="50,000元" />
+                                        </li>
+                                    </ul>
+                                    <ul class="tab_child" data-name="zce">
+                                        <li>
+                                            <select id="">
+                                              <option value="选择项目">选择项目</option>
+                                              <option value="项目1">项目1</option>
+                                              <option value="项目2">项目2</option>
+                                              <option value="项目3">项目3</option>
+                                              <option value="项目4">项目4</option>
+                                            </select>
+                                            <select id="">
+                                              <option value="选择版本">选择版本</option>
+                                              <option value="v1.0.1">v1.0.1</option>
+                                              <option value="v1.0.2">v1.0.2</option>
+                                              <option value="v1.0.3">v1.0.3</option>
+                                              <option value="v1.0.4">v1.0.4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <input type="text" style="width:60%" placeholder="众测说明" />
+                                        </li>
+                                    </ul>
+                                    <ul class="tab_child" data-name="ft">
+                                        <li>
+                                            <select id="">
+                                              <option value="选择项目">选择项目</option>
+                                              <option value="项目1">项目1</option>
+                                              <option value="项目2">项目2</option>
+                                              <option value="项目3">项目3</option>
+                                              <option value="项目4">项目4</option>
+                                            </select>
+                                            <select id="">
+                                              <option value="选择版本">选择版本</option>
+                                              <option value="v1.0.1">v1.0.1</option>
+                                              <option value="v1.0.2">v1.0.2</option>
+                                              <option value="v1.0.3">v1.0.3</option>
+                                              <option value="v1.0.4">v1.0.4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <input type="text" style="width:60%" placeholder="风投金额" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                        <div class="fr"><a class="crt_btn sty-2" href="#">发布产品</a></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div><!-- 主要区域 end -->
+
+
+
+
+
+<!-- Script -->
+<script src="lib/require-min.js" data-main='js/main'></script>
+</body>
+</html>

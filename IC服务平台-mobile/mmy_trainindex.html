@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="IC服务平台">
+	<meta name="description" content="IC服务平台">
+	<link rel="stylesheet" href="css/sm.css">
+	<link rel="stylesheet" href="css/sm-extend.css">
+	<link rel="stylesheet" href="css/mobile-index.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/zepto.js"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+	<div class="page" id="my">
+	<header class="bar bar-nav">
+		<a class="icon icon-left pull-left back"></a>		
+		<a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" ></a>
+		<h1 class="title">个人设置</h1>
+	</header>
+
+	<!-- 菜单栏 -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+	  <div class="content-block">
+	  	<a href="mlogin.html">
+	  		<div class="user-login">
+	  		<img src="images/pic2.jpg" alt="">
+	  		<!-- 如果未登录显示图标
+	  		<span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> 
+	  		-->
+	  		</div>
+	  		<div>用户名</div>
+	  	</a>
+	    <ul class="content-padded">
+	      <li><a href="mproduct_list.html">在线交易</a></li>
+          <li><a href="mfinance_index.html">金融服务</a></li>
+          <li><a href="mjob_index.html">人才服务</a></li>
+          <li><a href="mtrain_index.html">培训服务</a></li>
+          <li><a href="mpackage_index.html">设计众包</a></li>
+        </ul>
+        <div class="icon icon-home"><a href="/">返回首页</a></div>   
+	  </div>
+	</div>
+	<!-- 菜单栏 结束-->
+	<div class="content index">
+			<div class="list-block list" style="margin-top: 0">
+			    <ul>
+			      <li class="item-content item-link">
+			        <div class="item-inner">
+			          <div class="item-title"><a href="mmy_order.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAACz0lEQVRIDb2WTWgTQRTH/5PdZJM0H23Vakm1xI+qWEVFbdAKoj3UHrTFo4hSLR48eBP05kEEL6LiqWAULx6rh+pBRaRgjEI9VC1SsZUUovQrab6Tzchsms3anXxWnNPbN+/9f5k3My9DKKUUZcZ0SMZDfxy+qRRCCQqnmcDTasK5Axa4nEKZbIAUg4z/ziCepliIU9x6HUE0RVFnIlhrN+DXYlb9vnLUhnoLgU0i2LJa5AKLQvqfhDAxk1GTetvNuNRphSQSJDMU90diGBpLqPO7XUbc7XOo31pDQadlijcTKQRCsjo3G8sq9sl2M4wCcL4jB2BOBrp40ApRANIy8HQsgWBYhtcfU/NbnAKObDbBKBCQmYhMLw+F8XO+AFAjAQwPNCql0Pq0diRJ0TM4p3Wp9oYGAXd6HRBvv40qAE+rEce3myEacjH3RqIIhnOrUbNKGO5GARc8ViUikwWef03AN5UG0xffTabhMBPc6LErS8vreP1xAJVDnBYDDm805dPR6TaizzsPpi+y/WhtEP8CqJFA0VJoY3g224smm6AcHv6ZA7C+ntWt6LRO1+VcqrNupoTK9W47J7w2V3F8bXrcrP8C4Rb95bcknn1Ocn9VKeeJHRK62iRdCBfyY07Gp+m0LricY2czV45/fAY8Vpzea0G2bH8uYA0EsJpIwaGx+GgUT9DkVmxyIcHFLEYD1ZdrT4sR6+z6s8SFPHgfw4vx6je+e5uEa1023Qq5kP4OK7Y2iVXvySF3oXdpSVwIW/KpXWZt3IpsfQFXJMdP5q5k0BfD44+s1Vc3zuyzgB3/5YMLYX9AbWuq3xOWxxtcCGsNvPbAE6jEp+xJSq7ialeiuhST1zU0OwwILMgYraFXleIxPabL9MnwlwS9+SoC1ns2rRJRJ/H7TynB5XPRJMX32Yxyz64es+VekOx2P/oQB3uO/qvBnq9n91vAusAfD5vkGgkLPY0AAAAASUVORK5CYII=" alt="">我的订单</a></div>
+			        </div>
+			      </li>
+			      <li class="item-content item-link">
+			        <div class="item-inner">
+			          <div class="item-title"><a href="mmy_follow.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAFo0lEQVRIDa1XWWxUZRT+5s7aztbalLVQSpRFSgREJCiQKrWISIHg9mB8IJpgIpuARhFRkQcFDEoiSKLGJTyI0lLABgg0RtlBApRdKRRkaSj0zr5e853LhZlhSgfCebh3/v/+53znnP9sY9I0TUMGnbuWwMZjEexrjqGpNY5YAnDaTOjmMWNYqRVVfe3o9YA5jeuyL4lNxyLYfTaK820JqGENZgXoWWDG0B5WjB/gQFkGDwWYUhUIRjWs+DOAjUcjuE2rFDjFBIztZ8ebTzhhMwPf7Aqi5nAY8WTKoSw/yTNjlFOMMT7fVKDFn8SsWhW0njSilw1V/ewo72pBYZ6CtlASx6/EseVkBA2no0hqQBe3IsL+uarzjOptw9N97OhdZIbXYUJbWEPjpTg2n4jgwPmYyC0pMGP5RA+KXYqsRQFa/sYvbQJemK9gYZULg7tb5QAfiSTEncbGqZY4FtT7caFNB+7sJo8bA7pYjCO3vXedjWLRFr9cTY8CM1a/6EW+zaRfwefbA6hrDIulq17wootHQfP1BL7bE5I7pSemj3SmCb0eSmLaWhXRhIaVU7xiUTimof4E4yAGf0SDx2HC8FKrXJfVbBKZ09a2iRLjH7Zj3lMuWGjFhsawCF9Q5RLwnU1RsTASbz8SCvIULB7nRkLTBPzfqwm8u1HFJTU9ELg/rr9D5NPy+ZUuzKvzSZy9MiQPlg2NesAN62nFoyVWceuH9X4QfEiJFVMfz0ef4vSIN1xRVqTv865n16poDSZFmepyh2TJRTWJ0kJz2vUNL7VhUHcrDl6IiRKWPc16cDzT1y5yf9ofQjiuYXCJFcuqPWDEd0TM5CfLbDj4XwwrJntA79yJmA1UYG9zDJazrXog9e+sB9COJl2hqcPycgInEAHnVDgRS2jgXXdE5TeCldgKg4jEVCNdC+p3WFbUfkTLwSyPXMDJxkwjEVtxWHSNA1FdEaYGyUgxWdznB7OFRGylm1fX5mRLXDYZiKTfDumZIYv7/DhxA4vYilFwtp+OCszLg/PkXX88gq93BO9Yku9Vr22ndCxiKywypG2nIjhzNYGBXS2YNVovOmsOhLCsISBl917BMvlY6refjsg2sZV+nSxSrVjbF272gRVu0kAH3q90SRbUHglLCe2o0WQCZVszzliOWdpZD4gtATC3wgWX3SQemFGjgo2JLXfRODcsCrD1ZAQf/O6TNMsmOJc9GjZjnSoNjVhzK3QviwLsTF9N9koH4zVMX6dKFrC4LJngkWj960wUc+p8UqRyAUw9c8mn9w0GOlPwy0kZ3dA4zNSjllf8SRQ7FQFnuT16OY4561VpMCxYrJAcUHIhGkTelkBSBpql1W50994q7TfnAUMY3T+zRpXOxZ7+2fMeEJRNhfMCCxWVYk/vqORyFphXp8IX0YRn2QQPipx62ht4tynAD7yvt9f7wL5PS9n12BvooVk1KuhSWpHqSkOg8d59Lob5m3zS1JhZNCSb17IqQCGM2HfqVBy6GIfdYsJHY10yJaVOTp1cCpZP8qS5lLwM2sVb/TKiMdo/ftYlcWQol/pO90fKF2q7pNojKcrWTGsomAHLjvdQsQX+qCbDRQobfj0UxiebdXB22MXPudsFJ1+7HjCEciL+dKsPrF5szbNHOzGh3CEeampNpI1h3+4O4vu9IWGd8ogDb410oqNQ7VABSmORWtqgj21cTxuRD04zBvH78j8CWHdY7x8cYl577NZ341y2d04KkJH9a+WOIFieSa8OzcPrw/Pl98/7Q1i1MygeYhnnRJQr5ayAIfDHfSGs3hWUJUv2zNFOcKpmdtArFQ/ajKM5ve9aAUqtORLGFw0B8QoD7b0xLgHLZXzL1KrdLMg8mLqeWO6Q6ZZ9gn86ftgXynl8S5XD33c/d92QUNnXLn8s1vwdxkuDcr/zTAX+BxRblRQ7I/MjAAAAAElFTkSuQmCC" alt="">关注</a></div>
+			        </div>
+			      </li>
+			      <li class="item-content item-link">
+			        <div class="item-inner">
+			          <div class="item-title"><a href="mmy_whisper.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADf0lEQVRYCc1XSWgTURj+Ms3SZCaxVaOtVgS1datFqlIVcatFqxRsD4oH8aC4oAdXXFEUFUFR1IMHvXiuYKmCHtyqIIKCiBb0oOBSXA5qRkNiExP53uTNJGmmxYZGfygzb977ljf53nsdx82X0eTpe2FEYkkUurwuB7bPV+FouvQ1+T2SKLS+qVfiVeCUBtbP8sHjdJidA32jRxO4/DgC6jul2PLqYmiewpn4pBsmqK9IE12h3/K2INcvYSsCpomtbToevY0VxAB1dl/TTS3TRLg7iT3XdbQ+i5qdA3FDfupQT5ZpotSrIJEEzj8I49TdMOLW25Jj87qSj7zkp056/kwT51sCmDTcyGl7ZxQ72nXoUcttPg7IQz7ysqhzsilgUpomBvsUnG0OoL7SIzqffohhQ2sI777lF1jiyUM+FvnPtQQwxGdKW6uDA7hPHFysYW2dTwC4YjZeCeHJ+/4Fljji5cojL/ndRZlbgWVHyALsXjPDi8NL/MLUz19J7GzXcfX53wWW44kjnpMjH3kz5Q3RHiZSXrBgnBvMyRDVCOyZjjD4x1D1VuxPH0s8echnV7YmCJgwzImLKwahKmgENn12uQiz39r4FJ48vVWvJggcqiqoGWGRZP/OkjxXfqaUOwVejrG79mni/ptuXEltYNXlhhkz8V1GYJ92Za4kOY444vsqa4o5Rn7UEzhx+6fomTfWjSONftx69Qsn7oTFHrKtTcfkMic6P8VFVlxFDuytV1Ff5cHBGz/Q8bpb4CuHlqA8YD9f257Yb+DQzR8i3RQ60KCJZDeM9+BccwClPiOwzz8aBtjm80VVHjFuf4MmDDIn5CGfXdmauPAwjJdf4igLKDi+zFiukoSmLq0chJaaYkwf5RJXtvlcVrHTIXDEk4d8dmWh0kbIHKhuh9heea5kV1BVsHWumv04o00ct+eNrSGRq6kjXZg7pudS7cEuc+BUgGNL/RhdWpRB/LcN4o8u9YN8zBf5syvDRHoOdi3QUFvhyh7fr/a0ChfIZ5ePDBMyB6une9E40TjI+qWaA0Q+8ubKh5mJzs9x8bstrHRj3UzjAMvBldcj8nJT4/6RHmLTxDBVwapaL9bV5T5k8lJPgXl47VukYbg/gqBmZc00EdQUbJo9MG8gfQI8xqnD/7ZlmSbaXkQL/t0hTfwXX2DK5jk+8JvwXxR1t8zx4Q9qboaOqko5sAAAAABJRU5ErkJggg==" alt="">私信</a></div>
+			        </div>
+			      </li>
+			    </ul>
+			</div>
+
+			<div class="gotop"></div>
+
+	</div>
+	</div>
+	</div>
+	<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js"></script>
+</body>
+</html>

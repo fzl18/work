@@ -1,0 +1,24 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+a:hover{color:#FF8800}
+ul{overflow:hidden;}
+#down .banner{width: 100%;min-width: 1030px;height: 280px;background: url('../images/banner/banner-loaddown.jpg') center center no-repeat;}
+#down .left_nav{margin:50px 0;width:210px;border:1px solid #D5D7DB;background:#FCFDFF;box-shadow:0 0 4px rgba(0,0,0,.2)}
+#down .left_nav .tit{color:#333;font-weight: bold;padding-left: 50px;height:70px;line-height:70px;font-size:16px;}
+#down .left_nav li a{display:block;text-align: center;height:54px;line-height:54px;border-bottom: 1px solid #FCFDFF;border-left: 3px solid #FCFDFF;border-top: 1px solid #FCFDFF;}
+#down .left_nav li a.cur, #down .left_nav li a:hover{border-top: 1px solid #E4EDF8;border-bottom: 1px solid #E4EDF8;border-left: 3px solid #2BA1F9;background:#fff;}
+
+#down .list{width:73%;margin:50px 0 50px 50px;line-height:30px;}
+#down .list li{margin-bottom: 20px;padding:30px;border:1px solid #ddd;overflow:hidden;}
+#down .list h3{font-size:18px;margin-bottom:15px;}
+#down .list .info{color:#656565;padding-bottom:15px;border-bottom:1px dashed #ddd;}
+#down .list .link{margin-top:25px;}
+#down .list .link .time{color:#BFBFBF;font-size:12px;}
+#down .list .link .name{color:#278BDD}
+#down .list .link a{color:#fff;display:inline-block;padding:1px 20px;background:#278BDD;margin-left:20px;border-radius:5px;}
+
+
+.foot{clear:both;}
+.plaza_page_num {text-align: center;padding:50px;clear:both;}
+.plaza_page_num a {display: inline-block;width: 33px;height: 33px;    line-height: 33px;border: 1px solid #d6d7dc; color: #185a9d;font-size: 13px;margin: 2px;background-color:#efeff4;border-radius: 3px;}
+.plaza_page_num a.page_this {color: #fff;background: #185a9d;}

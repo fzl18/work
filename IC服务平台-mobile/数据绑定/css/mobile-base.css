@@ -1,0 +1,10 @@
+/* CSS Document by Richie*/
+@charset "utf-8";
+/*html{max-width: 1080px;}*/
+.fr{float: right;}
+.fl{float: left;}
+a{text-decoration:none;}
+img{vertical-align:middle;}
+body{background:#fff;margin:0 auto;}
+section{position: relative;}
+section:after{content:'';clear:both;}

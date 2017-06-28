@@ -1,0 +1,41 @@
+/* CSS Document by cchen*/
+.prolist{}
+.prolist li{ float:left; text-align:center; margin:20px 24px 20px 0;}
+.prolist .img{ width:180px; height:180px;}
+.prolist .img img{ width:180px; height:180px; border-radius:6px;}
+.prolist .title{ padding:1em;white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.prolist .title p{color: #093;line-height: 18px;}
+.prolist .choose a.cur{font-weight: bold;}
+/**/
+.guanzhulist{}
+.guanzhulist .title ul{ overflow:hidden;}
+.guanzhulist .title li{ float:left; font-size:14px; padding:6px 0; margin:0 6px; border-bottom:2px solid #fff; cursor:pointer;}
+.guanzhulist .title li.cur{ border-color:#ccc;}
+.guanzbox{ margin-top:24px;}
+.guanzbox li{ position:relative; display:block; border-left:1px solid #f25d34; padding-left:20px;}
+.guanzbox li:last-child{ border-color:#fff;}
+.guanzbox li:before{ content:''; width:12px; height:12px; display:block; position:absolute; left:-6px; top:0; border-radius:50%; background:#f25d34;}
+.guanzbox li img{ width:26px; height:26px; border-radius:50%; margin-right:20px;}
+.guanzbox li a{ color:#0099FF;}
+.guanzbox li .time{}
+.guanzbox li .info{ padding:12px 0;}
+/**/
+.my_task{}
+.my_task .title{ font-size:16px; margin-top:8px; height:20px; line-height:20px;}
+.my_task .title a{ color:#67AB49;}
+.my_task .title .icon{ display:block; width:20px; height:20px; line-height:20px; text-align:center; color:#fff; font-size:14px; margin-right:6px;}
+.my_task .info{ padding:8px; margin:0 8px; border-bottom:1px solid #ccc; overflow:hidden; height:16px; line-height:16px; font-size:12px; color:#333;}
+/* 这五个级别的警告色需要重新配 */
+.my_task .title .icon.v1{ background:#f00;}
+.my_task .title .v1:after{ content:'1';}
+.my_task .title .icon.v2{ background:#990000;}
+.my_task .title .v2:after{ content:'2';}
+.my_task .title .icon.v3{ background:#ff00ff;}
+.my_task .title .v3:after{ content:'3';}
+.my_task .title .icon.v4{ background:#ff6600;}
+.my_task .title .v4:after{ content:'4';}
+.my_task .title .icon.v5{ background:#b76b39;}
+.my_task .title .v5:after{ content:'5';}
+.my_task table{width: 100%;}
+.task-sort a{margin-left:10px;display:inline-block;}
+/**/

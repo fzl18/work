@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>无线网络1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" href="css/setting.css">
+
+</head>
+<body>
+	<div class="head blue">
+		<div class="layui-main">
+			<div class="logo"></div>
+			<a class="back fr f16" href="#">返回首页</a>		
+		</div>
+	</div>
+	<div class="layui-main">
+		<div style="width:60%;margin:0 auto">
+		<div class="title f30">无线网络</div>		
+			<form class="layui-form" style="margin-top: 30px;">
+				<div class="layui-form-item">
+					<label class="layui-form-label">无线网络：</label>
+					<div class="layui-input-block">
+						<input type="checkbox" lay-skin="switch" lay-text="开启|关闭" checked>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">无线名称：</label>
+					<div class="layui-input-block">
+						<input type="text" placeholder="请输入无线名称" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">无线密码：</label>
+					<div class="layui-input-block">
+						<input type="text" placeholder="请输密码" autocomplete="off" class="layui-input">
+					</div>
+					<div class="layui-input-block">
+						<p><span style="color:#f00">* </span>默认WPA-PSK/WPA2-PSK AES加密方式</p> 
+					</div>
+				 </div>
+				 <div class="layui-form-item">
+						<label class="layui-form-label">加密方式：</label>
+						<div class="layui-input-block">
+							<select >
+								<option value=""></option>
+								<option value="0">wap</option>
+								<option value="1">wap2-spk</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">信号强度：</label>
+						<div class="layui-input-block">
+							<select >
+								<option value=""></option>
+								<option value="0">强</option>
+								<option value="1">较强</option>
+								<option value="2">较弱</option>
+								<option value="3">弱</option>
+								<option value="4">很弱</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">无线信道：</label>
+						<div class="layui-input-block">
+							<select >
+								<option value=""></option>
+								<option value="0">SD5262659887</option>
+								<option value="1">KDDWE623559</option>
+								
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">无线频宽：</label>
+						<div class="layui-input-block">
+							<select >
+								<option value=""></option>
+								<option value="0">20MHz</option>
+								<option value="1">40MHz</option>
+								
+							</select>
+						</div>
+						<div class="layui-input-block">
+							<p><span style="color:#f00">* </span>建议优先采用20MHz,避免与周围住户产生干扰40MHz适合无线网络较少的环境</p>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">工作模式：</label>
+						<div class="layui-input-block">
+							<select >
+								<option value=""></option>
+								<option value="0">20MHz</option>
+								<option value="1">40MHz</option>
+								
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label"></label>
+						<div class="layui-input-block">
+							<input type="checkbox" lay-skin="primary" title="该无线网络仅搜索可见">
+						</div>
+					</div>
+
+				  <div class="layui-form-item" style="margin-top:30px;text-align:right">
+				      <button class="layui-btn layui-btn-normal f14">确认</button>
+				  </div>
+			</form>
+		</div>
+	</div>
+	
+
+<script src="lib/layui/lay/dest/layui.all.js"></script>
+<script src="js/setting.js"></script>
+</body>
+</html>

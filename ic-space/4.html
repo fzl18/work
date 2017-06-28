@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="基础选项" />
+    <meta name="Description" content="基础选项" />
+    <title>基础选项</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/code-public.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plus.css">
+</head>
+<body>
+<!-- 顶部导航 H*60 -->
+<div id="head_menu">
+    <div class="fl logo"><a href="#"><img src="images/frameIcon/code_logo.png"></a></div>
+    <div class="fl head_name">IC开发者空间</div>
+    <div class="fl top_search">
+        <div class="clearfix">
+            <input type="text" class="sotx" placeholder="输入搜索内容">
+            <input type="submit" class="sobt" value="">
+        </div>
+    </div>
+    <div class="fr top_link">
+        <div class="fl link_box">
+            <a href="#"><img src="css/icon/not.png"><span class="hidden">通知</span></a>
+            <a href="#"><img src="css/icon/mail.png"><span class="hidden">消息</span></a>
+            <a href="#"><img src="css/icon/set.png"><span class="hidden">设置</span></a>
+        </div>
+        <div class="fr min_menu">
+            <div class="admin">
+                <!-- .pic 中data-num 属性值为提示的信息数量 -->
+                <a href="#" class="pic" data-num="3"><img src="images/frameIcon/min_adpic.jpg"></a><a href="#" class="name">sy174350</a><em></em>
+            </div>
+            <div class="list" id="">
+                <ul>
+                    <li><a href="#"><i class="fa fa-tasks"></i>项目</a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i>账户</a></li>
+                    <li><a href="#"><i class="fa fa-power-off"></i>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 左侧导航栏 W*100 -->
+<div id="sidebar_menu">
+    <div class="adm"><a href="#"><img src="images/frameIcon/min_adpic.jpg"></a></div>
+    <ul class="list">
+        <li class="item"><a href="#"><i><img src="css/icon/xm.png"></i><span class="hidden">项目</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/rw.png"></i><span class="hidden">任务</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/cp.png"></i><span class="hidden">产品</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/hy.png"></i><span class="hidden">好友</span></a></li>
+        <li class="item"><a href="#"><i><img src="css/icon/zh.png"></i><span class="hidden">账户</span></a></li>
+    </ul>
+</div> 
+<!-- 这里才是主要区域 -->
+<div id="wrapper">
+    <!-- 预留二级侧边 -->
+    <div id="bar2">
+        <div class="bar2_title">项目 <a href="javascript:;" class="fr"><i class="fa fa-plus"></i></a></div> 
+        <div class="bar2_info">按我创建的、参与的和归档的项目分类</div>
+        <div class="bar2_list">
+            <ul>
+                <li><a href="#"><i class="fa fa-folder-open"></i>所有项目(2)</a></li>
+                <li><a href="#"><i class="fa fa-file"></i>我创建的(2)</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>我参与的(0)</a></li>
+                <li><a href="#"><i class="fa fa-play-circle-o"></i>已开启演示(0)</a></li>
+                <li><a href="#"><i class="fa fa-archive"></i>归档项目(0)</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="bar2_list">
+            <ul>
+                <li><a href="#"><i class="fa fa-eye"></i>我关注的(0)</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>我收藏的(0)</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 如果有二级侧边 则+.min -->
+    <div class="section_box min">
+        <!-- 满格 -->
+        <!-- <div class="full_box">
+            <div class="sec_title">
+                <span>模块名称</span>
+                <div class="right_input">
+                    <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                    <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                </div>
+            </div>
+        </div> -->
+        <!-- 左右两格 -->
+        <div class="two_box">
+            <!-- left -->
+            <div class="left_box">
+
+                <div class="full_box">
+                    <div class="sec_title">
+                        <span>基础选项</span>                        
+                    </div>
+                    <div class="base_setting f16">
+                        <ul class="text ">
+                            <li><input type="text" placeholder="项目名称" /></li>
+                            <li><textarea name="" id="" cols="30" rows="8" ></textarea></li>
+                            <li><label><input type="radio" value="s" name="attr" checked="true" />私有 </label><input type="radio" value="p" name="attr" id="open" /><label for="open">公开</label> <span class="tip f14">项目创建后无法修改此属性</span> <i class="fa fa-question-circle" title="xxx"></i> </li>
+                            <li><span class="f14">项目仅对成员可见，拥有代码仓库，创建讨论，上传文件，任务管理等功能</span></li>
+                        </ul>
+                        <div class="tab_group f16">
+                            <div class="tab_title">
+                                <ul>
+                                    <li data-number="1"> 初始化仓库</li>
+                                    <li data-number="2"> 导入仓库</li>                                    
+                                </ul>
+                            </div>
+                            <div class="tab_body">
+                                <div class="tab_child" data-number="1">
+                                    <ul class="text ">
+                                        <li><label><input type="checkbox" />启用README.md文件初始化项目</label></li>
+                                        <li>
+                                            <select id="">
+                                                <option selected="" value="添加开源许可证">添加开源许可证</option>
+                                                <option value="List Item1">List Item1</option>
+                                                <option value="List Item2">List Item2</option>
+                                                <option value="List Item3">List Item3</option>
+                                                <option value="List Item4">List Item4</option>
+                                            </select>  
+                                        </li>                             
+                                        <li><span> - </span>
+                                            <select id="">
+                                                <option value="添加.gitignore文件">添加.gitignore文件</option>
+                                                <option value="List Item1">List Item1</option>
+                                                <option value="List Item2">List Item2</option>
+                                                <option value="List Item3">List Item3</option>
+                                                <option value="List Item4">List Item4</option>
+                                            </select>  
+                                        </li>                                        
+                                    </ul>
+                                 </div>                                    
+                                    
+                                <div class="tab_child" data-number="2">
+                                    <ul class="text">
+                                        <li>
+                                            <label><input type="radio" value="k1" name="key" checked="true" />Git</label>
+                                            <label><input type="radio" value="k2" name="key" />SVN/Subversion</label>
+                                            <label><input type="radio" value="k3" name="key" />Hg/Mercurial</label>  
+                                            <i class="fa fa-question-circle" title="xxx"></i> 
+                                        </li>
+                                        <li>
+                                            <input type="text">
+                                        </li>
+                                    </ul>
+                                </div>                                
+                            </div>
+
+                            <div><a class="crt_btn" href="#">创建项目</a></div>
+                        </div>                        
+                    </div>
+
+                </div>
+
+                <!-- <div class="full_box">
+                    <div class="sec_title">
+                        <span>模块名称</span>
+                        <div class="right_input">
+                            <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- right -->
+            <!-- <div class="right_box">
+
+                <div class="full_box">
+                    <div class="sec_title">
+                        <span>模块名称</span>
+                        <div class="right_input">
+                            <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full_box">
+                    <div class="sec_title">
+                        <span>模块名称</span>
+                        <div class="right_input">
+                            <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+        <!--  -->
+        <!-- <div class="full_box">
+            <div class="sec_title">
+                <span>模块名称</span>
+                <div class="right_input">
+                    <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                    <a href="#" class="button default"><i class="fa fa-anchor"></i>按钮</a>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+</div><!-- 主要区域 end -->
+
+
+
+
+
+<!-- Script -->
+<script src="lib/require-min.js" data-main='js/main'></script>
+</body>
+</html>

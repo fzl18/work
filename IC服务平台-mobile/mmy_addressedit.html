@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="IC服务平台">
+	<meta name="description" content="IC服务平台">
+	<link rel="stylesheet" href="css/sm.css">
+	<link rel="stylesheet" href="css/sm-extend.css">
+	<link rel="stylesheet" href="css/mobile-index.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script src="js/zepto.js"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="page-group">
+	<div class="page" id="my">
+	<header class="bar bar-nav">
+		<a class="icon icon-left pull-left back"></a>		
+		<a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" ></a>
+		<h1 class="title">编辑收货地址</h1>
+	</header>
+
+	<!-- 菜单栏 -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-right panel-cover theme-white" id='side-nav'>
+	  <div class="content-block">
+	  	<a href="mlogin.html">
+	  		<div class="user-login">
+	  		<img src="images/pic2.jpg" alt="">
+	  		<!-- 如果未登录显示图标
+	  		<span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> 
+	  		-->
+	  		</div>
+	  		<div>用户名</div>
+	  	</a>
+	    <ul class="content-padded">
+	      <li><a href="mproduct_list.html">在线交易</a></li>
+          <li><a href="mfinance_index.html">金融服务</a></li>
+          <li><a href="mjob_index.html">人才服务</a></li>
+          <li><a href="mtrain_index.html">培训服务</a></li>
+          <li><a href="mpackage_index.html">设计众包</a></li>
+        </ul>
+        <div class="icon icon-home"><a href="/">返回首页</a></div>   
+	  </div>
+	</div>
+	<!-- 菜单栏 结束-->
+	<div class="content index addressedit">
+			<!-- 选择子项 -->			
+			<div class="list-block">
+			    <ul>
+			      <li>
+			        <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-title label">收货人</div>
+			            <div class="item-input">
+			              <input type="text" placeholder="姓名">
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			      <li class="item-content">
+			        <div class="item-inner">
+			          <div class="item-title label">联系电话</div>
+			          <div class="item-input">
+			              <input type="text" placeholder="15161516666">
+			            </div>
+			        </div>
+			      </li>
+			      <li class="item-content item-link">
+			        <div class="item-inner">
+			          <div class="item-title">所在地区</div>
+			          <div class="item-after"><input type="text" value="江苏省无锡市新区" id="adr"></div>
+			        </div>
+			      </li>
+			      <li class="item-content item-link">
+			        <div class="item-inner">
+			          <div class="item-title">街道</div>
+			          <div class="item-after"><input type="text" id="street" value="暂不选择"></div>
+			        </div>
+			      </li>
+			      <li class="item-content">
+			        <div class="item-inner">
+			          <input type="text" placeholder="太湖科技园清源路530大厦A座8楼">
+			        </div>
+			      </li>
+			    </ul>
+			</div>
+
+			<div class="submit"><a href="#" class="button button-fill">保存</a></div>
+
+
+	</div>
+	</div>
+	</div>
+	<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js"></script>
+</body>
+</html>

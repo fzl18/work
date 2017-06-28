@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="IC服务平台">
+    <meta name="description" content="IC服务平台">
+    <title>IC人才服务-人才大厅</title>
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <link rel="stylesheet" href="css/mobile-index.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/zepto.js"></script>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+
+<body>
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <div class="page" id="mproduct">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav" style="padding: 0;">
+                <a class="icon icon-left pull-left back" style="padding-left:0.2rem;"></a>
+                <a class="icon icon-menu pull-right open-panel" data-panel='#side-nav' href="javascript:;" style="padding-right:0.2rem;"></a>
+                <h1 class="title">人才大厅</h1>
+                <div class="nav-bar" id="job_navbar">
+                    <ul class="nav">
+                        <li class="dropdown-toggle caret category" gaevent="imt/filter/category" data-nav="category"><span class="nav-head-name">工作岗位</span><span class="icon icon-down" style="color: #000;padding-left: .1rem;margin: 0;font-size: 0.3rem;"></span></li>
+                        <li class="dropdown-toggle caret biz subway" gaevent="imt/filter/biz" data-nav="biz"><span class="nav-head-name">工作经验</span><span class="icon icon-down" style="color: #000;padding-left: .1rem;margin: 0;font-size: 0.3rem;"></span></li>
+                        <li class="dropdown-toggle caret sort" gaevent="imt/filter/sort" data-nav="sort"><span class="nav-head-name">资薪待遇</span><span class="icon icon-down" style="color: #000;padding-left: .1rem;margin: 0;font-size: 0.3rem;"></span></li>
+                    </ul>
+                    <div class="dropdown-wrapper category ">
+                        <div class="dropdown-module" style="overflow:hidden;">
+                            <div class="scroller-wrapper">
+                                <div id="dropdown_scroller" class="dropdown-scroller" style="overflow: hidden; ">
+                                    <ul style="transition-property: -webkit-transform; transform-origin: 0px 0px 0px; transform: translate3d(0px, 0px, 0px);">
+                                        <li class="category-wrapper ">
+                                            <ul class="dropdown-list">
+                                                <li gaevent="imt/filter/category/工作岗位" class="" data-type="deal" data-category-id="0" data-category-name="工作岗位" parent-class="category"><span>工作岗位</span><span class="quantity">＞</span>
+                                                    <li gaevent="imt/filter/category/WEB前端" class="" data-type="deal" data-category-id="0" data-category-name="WEB前端" parent-class="category"><span>WEB前端</span><span class="quantity">＞</span>
+                                                    </li>
+                                            </ul>
+                                            </li>
+                                            <li class="biz-wrapper">
+                                                <ul class="dropdown-list">
+                                                    <li gaevent="imt/filter/biz/工作地点" data-biz-id="-1" data-biz-name="工作地点" parent-class="biz"><span>工作经验</span><span class="quantity" parent-class="biz">＞</span></li>
+                                                    <li gaevent="imt/filter/biz/1—2年" class="right-arrow-point-right " data-biz-id="12161" data-biz-name="1—2年" data-has-sub="true" parent-class="biz"><span>1—2年</span><span class="quantity">＞</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sort-wrapper">
+                                                <ul class="dropdown-list">
+                                                    <li gaevent="imt/filter/sort/资薪待遇" data-sort-id="defaults" data-sort-name="资薪待遇" parent-class="sort"><span>资薪待遇</span><span class="quantity"></span></li>
+                                                    <li gaevent="imt/filter/sort/价格最低" data-sort-id="price" data-sort-name="价格最低" parent-class="sort">
+                                                        <span>价格最低</span><span class="quantity"></span></li>
+                                                    <li gaevent="imt/filter/sort/价格最高" data-sort-id="priceDesc" data-sort-name="价格最高" parent-class="sort"><span>价格最高</span><span class="quantity"></span></li>
+                                                </ul>
+                                            </li>
+                                            <li class="subway-wrapper">
+                                                <ul class="dropdown-list"></ul>
+                                            </li>
+                                            <li class="csp-wrapper">
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- 菜单栏 -->
+            <div class="panel-overlay"></div>
+            <div class="panel panel-right panel-cover theme-white" id='side-nav'>
+                <div class="content-block">
+                    <a href="mlogin.html">
+                        <div class="user-login">
+                            <img src="images/pic2.jpg" alt="">
+                            <!-- 如果未登录显示图标<span class="icon icon-me" style="position:absolute; font-size:1rem;top:1rem;right:1.1rem"></span> -->
+                        </div>
+                        <div>请登录/用户名</div>
+                    </a>
+                    <ul class="content-padded">
+                        <li><a href="mproduct_list.html">在线交易</a></li>
+                        <li><a href="mfinance_index.html">金融服务</a></li>
+                        <li><a href="mjob_index.html">人才服务</a></li>
+                        <li><a href="mtrain_index.html">培训服务</a></li>
+                        <li><a href="mpackage_index.html">设计众包</a></li>
+                    </ul>
+                    <div class="icon icon-home"><a href="/">返回首页</a></div>
+                </div>
+            </div>
+            <!-- 菜单栏结束 -->
+            <!-- 这里是页面内容区 -->
+            <div id="job" class="content pull-to-refresh-content notopbar" data-ptr-distance="10%">
+                <!-- 下拉刷新层 -->
+                <div class="pull-to-refresh-layer">
+                    <div class="preloader"></div>
+                    <div class="pull-to-refresh-arrow"></div>
+                </div>
+                <!-- 列表 -->
+                <div class="product-list mpackage_list">
+                    <div id="tab3" class="tab product-list">
+                        <div id="classify" class="tab infinite-scroll active">
+                            <div class="list-block project">
+                                <ul class="list-container">
+                                    <a href="mjob_classifydetail.html">
+                                        <div class="job_list_icon"><img src="images/icon.png"></div>
+                                        <li>
+                                            <div class="job_list_pic"><img src="images/talent_list_pic1.jpg"></div>
+                                            <div class="job_list_intro">
+                                                <div class="job_list_tit">柳成杰</div>
+                                                <div class="job_list_name">求职意向：技术专员/助理</div>
+                                                <div class="job_list_info">经验1年以上 ｜ 全职 ｜ 大专以上</div>
+                                            </div>
+                                            <div class="job_list_money">8k-10k/月</div>
+                                        </li>
+                                    </a>
+                                    <a href="mjob_classifydetail.html">
+                                        <div class="job_list_icon"><img src="images/icon.png"></div>
+                                        <li>
+                                            <div class="job_list_pic"><img src="images/talent_list_pic1.jpg"></div>
+                                            <div class="job_list_intro">
+                                                <div class="job_list_tit">柳成杰</div>
+                                                <div class="job_list_name">求职意向：技术专员/助理</div>
+                                                <div class="job_list_info">经验1年以上 ｜ 全职 ｜ 大专以上</div>
+                                            </div>
+                                            <div class="job_list_money">8k-10k/月</div>
+                                        </li>
+                                    </a>
+                                    <a href="mjob_classifydetail.html">
+                                        <div class="job_list_icon"><img src="images/icon.png"></div>
+                                        <li>
+                                            <div class="job_list_pic"><img src="images/talent_list_pic1.jpg"></div>
+                                            <div class="job_list_intro">
+                                                <div class="job_list_tit">柳成杰</div>
+                                                <div class="job_list_name">求职意向：技术专员/助理</div>
+                                                <div class="job_list_info">经验1年以上 ｜ 全职 ｜ 大专以上</div>
+                                            </div>
+                                            <div class="job_list_money">8k-10k/月</div>
+                                        </li>
+                                    </a>
+                                    <a href="mjob_classifydetail.html">
+                                        <li>
+                                            <div class="job_list_pic"><img src="images/talent_list_pic1.jpg"></div>
+                                            <div class="job_list_intro">
+                                                <div class="job_list_tit">柳成杰</div>
+                                                <div class="job_list_name">求职意向：技术专员/助理</div>
+                                                <div class="job_list_info">经验1年以上 ｜ 全职 ｜ 大专以上</div>
+                                            </div>
+                                            <div class="job_list_money">8k-10k/月</div>
+                                        </li>
+                                    </a>
+                                    <a href="mjob_classifydetail.html">
+                                        <li>
+                                            <div class="job_list_pic"><img src="images/talent_list_pic1.jpg"></div>
+                                            <div class="job_list_intro">
+                                                <div class="job_list_tit">柳成杰</div>
+                                                <div class="job_list_name">求职意向：技术专员/助理</div>
+                                                <div class="job_list_info">经验1年以上 ｜ 全职 ｜ 大专以上</div>
+                                            </div>
+                                            <div class="job_list_money">8k-10k/月</div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <div class="shade hide"></div>
+                            </div>
+                            <!-- 加载提示符 -->
+                            <div class="infinite-scroll-preloader">
+                                <div class="preloader">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                $(function() {
+                    $(".nav li").on('click', function() {
+                        if ($(this).hasClass('active')) {
+                            $(this).removeClass('active');
+                            var target = "." + $(this).attr('data-nav') + "-wrapper";
+                            $(target).removeClass('active');
+                            $('.shade').addClass('hide');
+                        } else {
+                            $(this).addClass('active').siblings('li').removeClass('active');
+                            var target = "." + $(this).attr('data-nav') + "-wrapper";
+                            $(target).addClass('active').siblings('li').removeClass('active');
+                            $('.shade').removeClass('hide');
+                        }
+                    })
+                    $('.dropdown-list li').on('click', function() {
+                        var has_sub = $(this).attr('data-has-sub');
+                        if (has_sub) {
+                            $("#dropdown_scroller").css('width', '100%');
+                            // $('#dropdown_sub_scroller').css('left', '3.2rem');
+                        }
+                        var parent_class = $(this).attr("parent-class");
+                        var category_name = $(this).attr("data-" + parent_class + "-name");
+                        $(".dropdown-toggle." + $(this).attr("parent-class")).text(category_name);
+                        $(this).parents("." + parent_class + "-wrapper").removeClass('active');
+                        $(".nav ." + parent_class).removeClass('active');
+                        $('.shade').addClass('hide');
+                        // if (parent_class != 'category') {
+                        //     $(".dropdown-toggle.category").text("工作岗位");
+                        // }
+
+                        // if (parent_class != 'biz') {
+                        //     $(".dropdown-toggle.biz").text("工作地点");
+                        // }
+
+                        // if (parent_class != 'sort') {
+                        //     $(".dropdown-toggle.sort").text("资薪待遇");
+                        // }
+                    })
+                })
+                </script>
+                <div class="gotop"></div>
+                <footer class="foot">
+                    <p>Copyright©2016|无锡德思普科技有限公司.All Rights Reserved.苏ICP备110718</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm-extend.js' charset='utf-8'></script>
+    <script src="js/toucher.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
